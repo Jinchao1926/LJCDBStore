@@ -1,0 +1,20 @@
+**/*.xcuserdatad/
+**/*.xccheckout/
+**/.DS_Store
+**/*.xcworkspace/*.xcshareddata
+**/*.xcworkspace/*.xcuserdata
+**/*.xcodeproj/project.xcworkspace/xcsharedata/*
+**/.xcodeproj/project.xcworkspace/xcuserdata/*
+*.xccheckout
+*Parents/Resources/Logging/LogChannels.plist
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+**/Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace 
+*.xcworkspace

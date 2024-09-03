@@ -1,0 +1,1655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B7EF085C15719836E7E21AC /* Pods_LJCDBStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F86B4980EA5EED6E5770AE /* Pods_LJCDBStore.framework */; };
+		590218351FA616430098E37C /* LJCDoctorRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 590218341FA616430098E37C /* LJCDoctorRequest.m */; };
+		590218381FA620360098E37C /* LJCDoctorRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 590218371FA620360098E37C /* LJCDoctorRequestManager.m */; };
+		5924DE811FA76F290075E006 /* MJRefreshStateHeader+LJCSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5924DE801FA76F290075E006 /* MJRefreshStateHeader+LJCSetting.m */; };
+		5924DE881FA775CA0075E006 /* MJRefreshBackStateFooter+LJCSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5924DE871FA775CA0075E006 /* MJRefreshBackStateFooter+LJCSetting.m */; };
+		592D713A1FDA361D0092DEAE /* LJCChatVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 592D71391FDA361D0092DEAE /* LJCChatVideoCell.m */; };
+		592D713E1FDA6FAE0092DEAE /* LJCVideoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 592D713D1FDA6FAE0092DEAE /* LJCVideoHelper.m */; };
+		59325B1E1FE769CD0082A313 /* LJCCameraRecorderProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59325B1D1FE769CD0082A313 /* LJCCameraRecorderProxy.m */; };
+		59325B2B1FE7BF0C0082A313 /* LJCTouchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 59325B2A1FE7BF0C0082A313 /* LJCTouchDetector.m */; };
+		593426931FB1463B00ED0E36 /* LJCKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593426921FB1463B00ED0E36 /* LJCKeyboardViewController.m */; };
+		5939DD1B1FC55B5C00E1B05C /* LJCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DD1A1FC55B5C00E1B05C /* LJCChatViewController.m */; };
+		5939DD1F1FC55D2100E1B05C /* IQKeyboardManager+LJCAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939DD1E1FC55D2100E1B05C /* IQKeyboardManager+LJCAppearance.m */; };
+		5939FC421F9F3D4400F09082 /* LJCGameModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939FC411F9F3D4400F09082 /* LJCGameModifyViewController.m */; };
+		5939FC431F9F403300F09082 /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 599D1CD91F9DCD6200D91F42 /* NSFileManager+Paths.m */; };
+		5939FC441F9F403300F09082 /* NSFileManager+LJCDBStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 599D1CD71F9DCD6200D91F42 /* NSFileManager+LJCDBStore.m */; };
+		59436B531FD7E01100773370 /* NSString+LJCDateString.m in Sources */ = {isa = PBXBuildFile; fileRef = 59436B521FD7E01100773370 /* NSString+LJCDateString.m */; };
+		59436B581FD7F13100773370 /* LJCShapeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59436B571FD7F13100773370 /* LJCShapeImageView.m */; };
+		59483D261FEA12FE002113AB /* UIImage+LJCVideoThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = 59483D251FEA12FE002113AB /* UIImage+LJCVideoThumb.m */; };
+		59483D2F1FEA5806002113AB /* SCRecordSession+LJCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 59483D2E1FEA5806002113AB /* SCRecordSession+LJCExtension.m */; };
+		596BFBD01FC662A800778D3C /* UITableView+LJCAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 596BFBCF1FC662A800778D3C /* UITableView+LJCAppearance.m */; };
+		596BFBD81FC6661000778D3C /* LJCChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 596BFBD71FC6661000778D3C /* LJCChatCell.m */; };
+		596BFBDB1FC6662400778D3C /* LJCChatTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 596BFBDA1FC6662400778D3C /* LJCChatTextCell.m */; };
+		596BFBDE1FC6663600778D3C /* LJCChatVoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 596BFBDD1FC6663600778D3C /* LJCChatVoiceCell.m */; };
+		596BFBE11FC6664500778D3C /* LJCChatPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 596BFBE01FC6664500778D3C /* LJCChatPhotoCell.m */; };
+		596BFBE61FC669D000778D3C /* LJCChatLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 596BFBE51FC669D000778D3C /* LJCChatLayout.m */; };
+		596D4C921FA9A45E00A85494 /* MJRefreshAutoNormalFooter+LJCSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 596D4C911FA9A45E00A85494 /* MJRefreshAutoNormalFooter+LJCSetting.m */; };
+		596F030D1FAC0A4100D4D666 /* LJCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 596F030C1FAC0A4100D4D666 /* LJCBaseModel.m */; };
+		596F95E22020537500FD342B /* YYCache+LJCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 596F95E02020537500FD342B /* YYCache+LJCFactory.m */; };
+		5972F5C31FA1E208005DD616 /* SVProgressHUD+LJCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5972F5C21FA1E208005DD616 /* SVProgressHUD+LJCExtension.m */; };
+		5974FD661FA05F00009EEAE7 /* LJCGameStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5974FD611FA05EBC009EEAE7 /* LJCGameStore.mm */; };
+		5974FD671FA05F00009EEAE7 /* LJCGameModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5974FD651FA05ED0009EEAE7 /* LJCGameModel.mm */; };
+		5974FD721FA08325009EEAE7 /* LJCDoctorModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5974FD711FA08325009EEAE7 /* LJCDoctorModel.mm */; };
+		597584BB1FA81E48003928DE /* LJCDoctorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 597584BA1FA81E48003928DE /* LJCDoctorCell.m */; };
+		59766ADA1FD683EA0008E2F8 /* LJCPhotoPickerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59766AD91FD683EA0008E2F8 /* LJCPhotoPickerProxy.m */; };
+		59766AE11FD6858E0008E2F8 /* LJCAuthorizationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 59766ADD1FD6858E0008E2F8 /* LJCAuthorizationHelper.m */; };
+		59766AE21FD6858E0008E2F8 /* LJCDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 59766AE01FD6858E0008E2F8 /* LJCDeviceHelper.m */; };
+		59766AE61FD696080008E2F8 /* UIViewController+LJCHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59766AE51FD696080008E2F8 /* UIViewController+LJCHierarchy.m */; };
+		597ADF871FDE2D6D008AF086 /* YYPhotoGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 597ADF861FDE2D6D008AF086 /* YYPhotoGroupView.m */; };
+		597ADF8B1FDE2E04008AF086 /* LJCPhotoBrowserProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 597ADF8A1FDE2E04008AF086 /* LJCPhotoBrowserProxy.m */; };
+		597ADF8E1FDE34DE008AF086 /* LJCChatPhotoBrowserProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 597ADF8D1FDE34DE008AF086 /* LJCChatPhotoBrowserProxy.m */; };
+		597B20CE1FFB1B2100C09775 /* LJCChatFTSModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 597B20CD1FFB1B2100C09775 /* LJCChatFTSModel.mm */; };
+		597B20D31FFB1E0100C09775 /* LJCChatFTSStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 597B20D21FFB1E0100C09775 /* LJCChatFTSStore.mm */; };
+		597FEF5E1FDFBD9E00F80D9D /* MWPhoto+LJCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 597FEF5D1FDFBD9E00F80D9D /* MWPhoto+LJCExtension.m */; };
+		59800EC91FBEC95000796392 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59800EC81FBEC95000796392 /* YYFPSLabel.m */; };
+		5983120E1FF60DA7001AEDEA /* LJCChatSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5983120D1FF60DA7001AEDEA /* LJCChatSearchViewController.m */; };
+		59844C641FC285E3008BFECC /* LJCDoctorYYCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59844C631FC285E3008BFECC /* LJCDoctorYYCell.m */; };
+		59844C671FC285F2008BFECC /* LJCDoctorYYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59844C661FC285F2008BFECC /* LJCDoctorYYViewController.m */; };
+		598CCD931FCC1722005366AF /* LJCChatStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 598CCD921FCC1722005366AF /* LJCChatStore.mm */; };
+		598E93B21FD4EDF800D78353 /* LJCChatTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 598E93AD1FD4EDF800D78353 /* LJCChatTextField.m */; };
+		598E93B31FD4EDF800D78353 /* LJCChatToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 598E93AF1FD4EDF800D78353 /* LJCChatToggleButton.m */; };
+		598E93B41FD4EDF800D78353 /* LJCChatToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 598E93B11FD4EDF800D78353 /* LJCChatToolbar.m */; };
+		598E93B71FD5283700D78353 /* LJCChatMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 598E93B61FD5283700D78353 /* LJCChatMoreCell.m */; };
+		599198371FA2C56900D6CBC5 /* LJCDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 599198361FA2C56900D6CBC5 /* LJCDoctorViewController.m */; };
+		5993E5831F9ED3FA0093FC87 /* LJCGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5993E5821F9ED3FA0093FC87 /* LJCGameViewController.m */; };
+		599D1CDD1F9DCF2D00D91F42 /* LJCStoreManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 599D1CDC1F9DCF2D00D91F42 /* LJCStoreManager.mm */; };
+		599D1CE21F9DD83600D91F42 /* LJCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 599D1CE11F9DD83600D91F42 /* LJCRootViewController.m */; };
+		59A2C0F31FCE617200B9B44D /* UIScrollView+LJC_YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A2C0F21FCE617200B9B44D /* UIScrollView+LJC_YYAdd.m */; };
+		59A2C0F51FCE85A400B9B44D /* LJCChatRequestManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59A2C0F41FCE85A400B9B44D /* LJCChatRequestManager.mm */; };
+		59A2C0FF1FCEA3D000B9B44D /* LJCChatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A2C0FE1FCEA3D000B9B44D /* LJCChatHelper.m */; };
+		59A72A781FC2BB25009C2F07 /* LJCDoctorYYLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A72A771FC2BB25009C2F07 /* LJCDoctorYYLayout.m */; };
+		59ACA9091FE3B4FF00EF25F8 /* LJCChatCellMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ACA9081FE3B4FF00EF25F8 /* LJCChatCellMenu.m */; };
+		59B129981FD1071100F50ABD /* LJCChatEmojiToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B129971FD1071100F50ABD /* LJCChatEmojiToolbar.m */; };
+		59BA0DF81FEB51D300B82F44 /* LJCStoreMonitor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59BA0DF71FEB51D300B82F44 /* LJCStoreMonitor.mm */; };
+		59C67F841FC67AEF00433863 /* LJCChatModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59C67F831FC67AEF00433863 /* LJCChatModel.mm */; };
+		59C67F881FC69BEB00433863 /* LJCChatPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C67F871FC69BEB00433863 /* LJCChatPerformer.m */; };
+		59C73B991FE8B7E700406AB4 /* LJCCameraRecorderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C73B8F1FE8B7E600406AB4 /* LJCCameraRecorderController.m */; };
+		59C73B9A1FE8B7E700406AB4 /* LJCCameraRecordTipsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C73B911FE8B7E600406AB4 /* LJCCameraRecordTipsTool.m */; };
+		59C73B9B1FE8B7E700406AB4 /* LJCCameraRecordToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C73B931FE8B7E600406AB4 /* LJCCameraRecordToolBar.m */; };
+		59C73B9C1FE8B7E700406AB4 /* LJCCameraRecordPreviewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C73B961FE8B7E600406AB4 /* LJCCameraRecordPreviewToolbar.m */; };
+		59C73B9D1FE8B7E700406AB4 /* LJCCameraRecordPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C73B981FE8B7E600406AB4 /* LJCCameraRecordPreviewView.m */; };
+		59C73BA51FE906AE00406AB4 /* UIImage+LJCOrietation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C73BA41FE906AE00406AB4 /* UIImage+LJCOrietation.m */; };
+		59D032421FCF97E3001B8AE0 /* LJCChatEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D032411FCF97E3001B8AE0 /* LJCChatEmotion.m */; };
+		59D032451FCF9AAD001B8AE0 /* EmoticonQQ.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59D032431FCF9AAD001B8AE0 /* EmoticonQQ.bundle */; };
+		59D032461FCF9AAD001B8AE0 /* EmoticonWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59D032441FCF9AAD001B8AE0 /* EmoticonWeibo.bundle */; };
+		59D0324D1FCFA55A001B8AE0 /* LJCChatEmojiInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D032491FCFA55A001B8AE0 /* LJCChatEmojiInputView.m */; };
+		59D0324E1FCFA55A001B8AE0 /* LJCChatMoreInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D0324C1FCFA55A001B8AE0 /* LJCChatMoreInputView.m */; };
+		59D032511FCFA5BB001B8AE0 /* LJCChatEmojiCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D032501FCFA5BB001B8AE0 /* LJCChatEmojiCollectionView.m */; };
+		59D032541FCFA5D4001B8AE0 /* LJCChatEmojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D032531FCFA5D4001B8AE0 /* LJCChatEmojiCell.m */; };
+		59D660461FAAFAA800217A44 /* FPSDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D660451FAAFAA800217A44 /* FPSDisplay.m */; };
+		59E4FCEB1F98A4FE00FDD23B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E4FCEA1F98A4FE00FDD23B /* AppDelegate.m */; };
+		59E4FCF31F98A4FE00FDD23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E4FCF21F98A4FE00FDD23B /* Assets.xcassets */; };
+		59E4FCF61F98A4FE00FDD23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E4FCF41F98A4FE00FDD23B /* LaunchScreen.storyboard */; };
+		59E4FCF91F98A4FE00FDD23B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E4FCF81F98A4FE00FDD23B /* main.m */; };
+		59E4FD031F98A4FF00FDD23B /* LJCDBStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E4FD021F98A4FF00FDD23B /* LJCDBStoreTests.m */; };
+		59E4FD0E1F98A4FF00FDD23B /* LJCDBStoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E4FD0D1F98A4FF00FDD23B /* LJCDBStoreUITests.m */; };
+		59FA21501FA6BFFE0048CC69 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA214F1FA6BFFE0048CC69 /* Foundation+Log.m */; };
+		59FA21591FA701BB0048CC69 /* LJCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA21581FA701BB0048CC69 /* LJCRequest.m */; };
+		59FA21681FA715010048CC69 /* LJCDoctorStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59FA21671FA715010048CC69 /* LJCDoctorStore.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59E4FCFF1F98A4FF00FDD23B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59E4FCDE1F98A4FE00FDD23B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59E4FCE51F98A4FE00FDD23B;
+			remoteInfo = LJCDBStore;
+		};
+		59E4FD0A1F98A4FF00FDD23B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59E4FCDE1F98A4FE00FDD23B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59E4FCE51F98A4FE00FDD23B;
+			remoteInfo = LJCDBStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		590218331FA616430098E37C /* LJCDoctorRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCDoctorRequest.h; sourceTree = "<group>"; };
+		590218341FA616430098E37C /* LJCDoctorRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCDoctorRequest.m; sourceTree = "<group>"; };
+		590218361FA620360098E37C /* LJCDoctorRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCDoctorRequestManager.h; sourceTree = "<group>"; };
+		590218371FA620360098E37C /* LJCDoctorRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCDoctorRequestManager.m; sourceTree = "<group>"; };
+		5924DE7C1FA7561F0075E006 /* LJCNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCNetworkConfig.h; sourceTree = "<group>"; };
+		5924DE7F1FA76F290075E006 /* MJRefreshStateHeader+LJCSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJRefreshStateHeader+LJCSetting.h"; sourceTree = "<group>"; };
+		5924DE801FA76F290075E006 /* MJRefreshStateHeader+LJCSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MJRefreshStateHeader+LJCSetting.m"; sourceTree = "<group>"; };
+		5924DE861FA775CA0075E006 /* MJRefreshBackStateFooter+LJCSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJRefreshBackStateFooter+LJCSetting.h"; sourceTree = "<group>"; };
+		5924DE871FA775CA0075E006 /* MJRefreshBackStateFooter+LJCSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MJRefreshBackStateFooter+LJCSetting.m"; sourceTree = "<group>"; };
+		592D71381FDA361D0092DEAE /* LJCChatVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatVideoCell.h; sourceTree = "<group>"; };
+		592D71391FDA361D0092DEAE /* LJCChatVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatVideoCell.m; sourceTree = "<group>"; };
+		592D713C1FDA6FAE0092DEAE /* LJCVideoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCVideoHelper.h; sourceTree = "<group>"; };
+		592D713D1FDA6FAE0092DEAE /* LJCVideoHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCVideoHelper.m; sourceTree = "<group>"; };
+		59325B1C1FE769CD0082A313 /* LJCCameraRecorderProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCCameraRecorderProxy.h; sourceTree = "<group>"; };
+		59325B1D1FE769CD0082A313 /* LJCCameraRecorderProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCCameraRecorderProxy.m; sourceTree = "<group>"; };
+		59325B291FE7BF0C0082A313 /* LJCTouchDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCTouchDetector.h; sourceTree = "<group>"; };
+		59325B2A1FE7BF0C0082A313 /* LJCTouchDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCTouchDetector.m; sourceTree = "<group>"; };
+		593426911FB1463B00ED0E36 /* LJCKeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCKeyboardViewController.h; sourceTree = "<group>"; };
+		593426921FB1463B00ED0E36 /* LJCKeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCKeyboardViewController.m; sourceTree = "<group>"; };
+		5939DD191FC55B5C00E1B05C /* LJCChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatViewController.h; sourceTree = "<group>"; };
+		5939DD1A1FC55B5C00E1B05C /* LJCChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatViewController.m; sourceTree = "<group>"; };
+		5939DD1D1FC55D2100E1B05C /* IQKeyboardManager+LJCAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager+LJCAppearance.h"; sourceTree = "<group>"; };
+		5939DD1E1FC55D2100E1B05C /* IQKeyboardManager+LJCAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager+LJCAppearance.m"; sourceTree = "<group>"; };
+		5939FC401F9F3D4400F09082 /* LJCGameModifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCGameModifyViewController.h; sourceTree = "<group>"; };
+		5939FC411F9F3D4400F09082 /* LJCGameModifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCGameModifyViewController.m; sourceTree = "<group>"; };
+		59436B511FD7E01100773370 /* NSString+LJCDateString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LJCDateString.h"; sourceTree = "<group>"; };
+		59436B521FD7E01100773370 /* NSString+LJCDateString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJCDateString.m"; sourceTree = "<group>"; };
+		59436B561FD7F13100773370 /* LJCShapeImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCShapeImageView.h; sourceTree = "<group>"; };
+		59436B571FD7F13100773370 /* LJCShapeImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCShapeImageView.m; sourceTree = "<group>"; };
+		59483D241FEA12FE002113AB /* UIImage+LJCVideoThumb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LJCVideoThumb.h"; sourceTree = "<group>"; };
+		59483D251FEA12FE002113AB /* UIImage+LJCVideoThumb.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LJCVideoThumb.m"; sourceTree = "<group>"; };
+		59483D2D1FEA5806002113AB /* SCRecordSession+LJCExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCRecordSession+LJCExtension.h"; sourceTree = "<group>"; };
+		59483D2E1FEA5806002113AB /* SCRecordSession+LJCExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCRecordSession+LJCExtension.m"; sourceTree = "<group>"; };
+		596BFBCE1FC662A800778D3C /* UITableView+LJCAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+LJCAppearance.h"; sourceTree = "<group>"; };
+		596BFBCF1FC662A800778D3C /* UITableView+LJCAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LJCAppearance.m"; sourceTree = "<group>"; };
+		596BFBD61FC6661000778D3C /* LJCChatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatCell.h; sourceTree = "<group>"; };
+		596BFBD71FC6661000778D3C /* LJCChatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatCell.m; sourceTree = "<group>"; };
+		596BFBD91FC6662400778D3C /* LJCChatTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatTextCell.h; sourceTree = "<group>"; };
+		596BFBDA1FC6662400778D3C /* LJCChatTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatTextCell.m; sourceTree = "<group>"; };
+		596BFBDC1FC6663600778D3C /* LJCChatVoiceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatVoiceCell.h; sourceTree = "<group>"; };
+		596BFBDD1FC6663600778D3C /* LJCChatVoiceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatVoiceCell.m; sourceTree = "<group>"; };
+		596BFBDF1FC6664500778D3C /* LJCChatPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatPhotoCell.h; sourceTree = "<group>"; };
+		596BFBE01FC6664500778D3C /* LJCChatPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatPhotoCell.m; sourceTree = "<group>"; };
+		596BFBE31FC6689700778D3C /* LJCChatLayoutConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatLayoutConst.h; sourceTree = "<group>"; };
+		596BFBE41FC669D000778D3C /* LJCChatLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatLayout.h; sourceTree = "<group>"; };
+		596BFBE51FC669D000778D3C /* LJCChatLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatLayout.m; sourceTree = "<group>"; };
+		596D4C901FA9A45E00A85494 /* MJRefreshAutoNormalFooter+LJCSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJRefreshAutoNormalFooter+LJCSetting.h"; sourceTree = "<group>"; };
+		596D4C911FA9A45E00A85494 /* MJRefreshAutoNormalFooter+LJCSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MJRefreshAutoNormalFooter+LJCSetting.m"; sourceTree = "<group>"; };
+		596F030B1FAC0A4100D4D666 /* LJCBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCBaseModel.h; sourceTree = "<group>"; };
+		596F030C1FAC0A4100D4D666 /* LJCBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCBaseModel.m; sourceTree = "<group>"; };
+		596F030E1FAC0A6300D4D666 /* LJCBaseHeightProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCBaseHeightProtocol.h; sourceTree = "<group>"; };
+		596F95E02020537500FD342B /* YYCache+LJCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YYCache+LJCFactory.m"; sourceTree = "<group>"; };
+		596F95E12020537500FD342B /* YYCache+LJCFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYCache+LJCFactory.h"; sourceTree = "<group>"; };
+		5972F5C11FA1E208005DD616 /* SVProgressHUD+LJCExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+LJCExtension.h"; sourceTree = "<group>"; };
+		5972F5C21FA1E208005DD616 /* SVProgressHUD+LJCExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+LJCExtension.m"; sourceTree = "<group>"; };
+		5974FD601FA05EBC009EEAE7 /* LJCGameStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCGameStore.h; sourceTree = "<group>"; };
+		5974FD611FA05EBC009EEAE7 /* LJCGameStore.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCGameStore.mm; sourceTree = "<group>"; };
+		5974FD631FA05ED0009EEAE7 /* LJCGameModel+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJCGameModel+WCTTableCoding.h"; sourceTree = "<group>"; };
+		5974FD641FA05ED0009EEAE7 /* LJCGameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCGameModel.h; sourceTree = "<group>"; };
+		5974FD651FA05ED0009EEAE7 /* LJCGameModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCGameModel.mm; sourceTree = "<group>"; };
+		5974FD6F1FA08325009EEAE7 /* LJCDoctorModel+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJCDoctorModel+WCTTableCoding.h"; sourceTree = "<group>"; };
+		5974FD701FA08325009EEAE7 /* LJCDoctorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCDoctorModel.h; sourceTree = "<group>"; };
+		5974FD711FA08325009EEAE7 /* LJCDoctorModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCDoctorModel.mm; sourceTree = "<group>"; };
+		597584B91FA81E48003928DE /* LJCDoctorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCDoctorCell.h; sourceTree = "<group>"; };
+		597584BA1FA81E48003928DE /* LJCDoctorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCDoctorCell.m; sourceTree = "<group>"; };
+		59766AD81FD683EA0008E2F8 /* LJCPhotoPickerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCPhotoPickerProxy.h; sourceTree = "<group>"; };
+		59766AD91FD683EA0008E2F8 /* LJCPhotoPickerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCPhotoPickerProxy.m; sourceTree = "<group>"; };
+		59766ADC1FD6858E0008E2F8 /* LJCAuthorizationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCAuthorizationHelper.h; sourceTree = "<group>"; };
+		59766ADD1FD6858E0008E2F8 /* LJCAuthorizationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCAuthorizationHelper.m; sourceTree = "<group>"; };
+		59766ADF1FD6858E0008E2F8 /* LJCDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCDeviceHelper.h; sourceTree = "<group>"; };
+		59766AE01FD6858E0008E2F8 /* LJCDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCDeviceHelper.m; sourceTree = "<group>"; };
+		59766AE41FD696080008E2F8 /* UIViewController+LJCHierarchy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LJCHierarchy.h"; sourceTree = "<group>"; };
+		59766AE51FD696080008E2F8 /* UIViewController+LJCHierarchy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LJCHierarchy.m"; sourceTree = "<group>"; };
+		597ADF851FDE2D6D008AF086 /* YYPhotoGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYPhotoGroupView.h; sourceTree = "<group>"; };
+		597ADF861FDE2D6D008AF086 /* YYPhotoGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYPhotoGroupView.m; sourceTree = "<group>"; };
+		597ADF891FDE2E04008AF086 /* LJCPhotoBrowserProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCPhotoBrowserProxy.h; sourceTree = "<group>"; };
+		597ADF8A1FDE2E04008AF086 /* LJCPhotoBrowserProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCPhotoBrowserProxy.m; sourceTree = "<group>"; };
+		597ADF8C1FDE34DE008AF086 /* LJCChatPhotoBrowserProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatPhotoBrowserProxy.h; sourceTree = "<group>"; };
+		597ADF8D1FDE34DE008AF086 /* LJCChatPhotoBrowserProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatPhotoBrowserProxy.m; sourceTree = "<group>"; };
+		597B20CB1FFB1B2100C09775 /* LJCChatFTSModel+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJCChatFTSModel+WCTTableCoding.h"; sourceTree = "<group>"; };
+		597B20CC1FFB1B2100C09775 /* LJCChatFTSModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatFTSModel.h; sourceTree = "<group>"; };
+		597B20CD1FFB1B2100C09775 /* LJCChatFTSModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCChatFTSModel.mm; sourceTree = "<group>"; };
+		597B20CF1FFB1DEE00C09775 /* LJCChatFTSStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatFTSStore.h; sourceTree = "<group>"; };
+		597B20D21FFB1E0100C09775 /* LJCChatFTSStore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCChatFTSStore.mm; sourceTree = "<group>"; };
+		597F5AE61F9DCAA00043D7F6 /* LJCStoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCStoreManager.h; sourceTree = "<group>"; };
+		597FEF5C1FDFBD9E00F80D9D /* MWPhoto+LJCExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MWPhoto+LJCExtension.h"; sourceTree = "<group>"; };
+		597FEF5D1FDFBD9E00F80D9D /* MWPhoto+LJCExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MWPhoto+LJCExtension.m"; sourceTree = "<group>"; };
+		59800EC71FBEC95000796392 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		59800EC81FBEC95000796392 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		5983120C1FF60DA7001AEDEA /* LJCChatSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatSearchViewController.h; sourceTree = "<group>"; };
+		5983120D1FF60DA7001AEDEA /* LJCChatSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatSearchViewController.m; sourceTree = "<group>"; };
+		59844C621FC285E3008BFECC /* LJCDoctorYYCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCDoctorYYCell.h; sourceTree = "<group>"; };
+		59844C631FC285E3008BFECC /* LJCDoctorYYCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCDoctorYYCell.m; sourceTree = "<group>"; };
+		59844C651FC285F2008BFECC /* LJCDoctorYYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCDoctorYYViewController.h; sourceTree = "<group>"; };
+		59844C661FC285F2008BFECC /* LJCDoctorYYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCDoctorYYViewController.m; sourceTree = "<group>"; };
+		598CCD831FCBE460005366AF /* LJCMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCMacro.h; sourceTree = "<group>"; };
+		598CCD8B1FCC0CB1005366AF /* LJCChatRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatRequestManager.h; sourceTree = "<group>"; };
+		598CCD8F1FCC1715005366AF /* LJCChatStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatStore.h; sourceTree = "<group>"; };
+		598CCD921FCC1722005366AF /* LJCChatStore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCChatStore.mm; sourceTree = "<group>"; };
+		598E93AC1FD4EDF800D78353 /* LJCChatTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCChatTextField.h; sourceTree = "<group>"; };
+		598E93AD1FD4EDF800D78353 /* LJCChatTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCChatTextField.m; sourceTree = "<group>"; };
+		598E93AE1FD4EDF800D78353 /* LJCChatToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCChatToggleButton.h; sourceTree = "<group>"; };
+		598E93AF1FD4EDF800D78353 /* LJCChatToggleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCChatToggleButton.m; sourceTree = "<group>"; };
+		598E93B01FD4EDF800D78353 /* LJCChatToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCChatToolbar.h; sourceTree = "<group>"; };
+		598E93B11FD4EDF800D78353 /* LJCChatToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCChatToolbar.m; sourceTree = "<group>"; };
+		598E93B51FD5283700D78353 /* LJCChatMoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatMoreCell.h; sourceTree = "<group>"; };
+		598E93B61FD5283700D78353 /* LJCChatMoreCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatMoreCell.m; sourceTree = "<group>"; };
+		598E93B81FD531C500D78353 /* LJCChatMoreConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatMoreConst.h; sourceTree = "<group>"; };
+		599198351FA2C56900D6CBC5 /* LJCDoctorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCDoctorViewController.h; sourceTree = "<group>"; };
+		599198361FA2C56900D6CBC5 /* LJCDoctorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCDoctorViewController.m; sourceTree = "<group>"; };
+		5993E5811F9ED3FA0093FC87 /* LJCGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCGameViewController.h; sourceTree = "<group>"; };
+		5993E5821F9ED3FA0093FC87 /* LJCGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCGameViewController.m; sourceTree = "<group>"; };
+		599D1CD61F9DCD6200D91F42 /* NSFileManager+LJCDBStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+LJCDBStore.h"; sourceTree = "<group>"; };
+		599D1CD71F9DCD6200D91F42 /* NSFileManager+LJCDBStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+LJCDBStore.m"; sourceTree = "<group>"; };
+		599D1CD81F9DCD6200D91F42 /* NSFileManager+Paths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Paths.h"; sourceTree = "<group>"; };
+		599D1CD91F9DCD6200D91F42 /* NSFileManager+Paths.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Paths.m"; sourceTree = "<group>"; };
+		599D1CDB1F9DCE4B00D91F42 /* LJCDBStore-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJCDBStore-prefix.pch"; sourceTree = "<group>"; };
+		599D1CDC1F9DCF2D00D91F42 /* LJCStoreManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCStoreManager.mm; sourceTree = "<group>"; };
+		599D1CE01F9DD83600D91F42 /* LJCRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCRootViewController.h; sourceTree = "<group>"; };
+		599D1CE11F9DD83600D91F42 /* LJCRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCRootViewController.m; sourceTree = "<group>"; };
+		59A2C0F11FCE617200B9B44D /* UIScrollView+LJC_YYAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LJC_YYAdd.h"; sourceTree = "<group>"; };
+		59A2C0F21FCE617200B9B44D /* UIScrollView+LJC_YYAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LJC_YYAdd.m"; sourceTree = "<group>"; };
+		59A2C0F41FCE85A400B9B44D /* LJCChatRequestManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCChatRequestManager.mm; sourceTree = "<group>"; };
+		59A2C0FD1FCEA3D000B9B44D /* LJCChatHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatHelper.h; sourceTree = "<group>"; };
+		59A2C0FE1FCEA3D000B9B44D /* LJCChatHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatHelper.m; sourceTree = "<group>"; };
+		59A72A761FC2BB25009C2F07 /* LJCDoctorYYLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCDoctorYYLayout.h; sourceTree = "<group>"; };
+		59A72A771FC2BB25009C2F07 /* LJCDoctorYYLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCDoctorYYLayout.m; sourceTree = "<group>"; };
+		59ACA9071FE3B4FF00EF25F8 /* LJCChatCellMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatCellMenu.h; sourceTree = "<group>"; };
+		59ACA9081FE3B4FF00EF25F8 /* LJCChatCellMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatCellMenu.m; sourceTree = "<group>"; };
+		59B129961FD1071100F50ABD /* LJCChatEmojiToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatEmojiToolbar.h; sourceTree = "<group>"; };
+		59B129971FD1071100F50ABD /* LJCChatEmojiToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatEmojiToolbar.m; sourceTree = "<group>"; };
+		59BA0DF41FEB4D9E00B82F44 /* LJCStoreMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCStoreMonitor.h; sourceTree = "<group>"; };
+		59BA0DF71FEB51D300B82F44 /* LJCStoreMonitor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCStoreMonitor.mm; sourceTree = "<group>"; };
+		59C67F811FC67AEF00433863 /* LJCChatModel+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJCChatModel+WCTTableCoding.h"; sourceTree = "<group>"; };
+		59C67F821FC67AEF00433863 /* LJCChatModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatModel.h; sourceTree = "<group>"; };
+		59C67F831FC67AEF00433863 /* LJCChatModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCChatModel.mm; sourceTree = "<group>"; };
+		59C67F861FC69BEB00433863 /* LJCChatPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatPerformer.h; sourceTree = "<group>"; };
+		59C67F871FC69BEB00433863 /* LJCChatPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatPerformer.m; sourceTree = "<group>"; };
+		59C67F891FC69CF400433863 /* LJCChatConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatConst.h; sourceTree = "<group>"; };
+		59C73B8E1FE8B7E600406AB4 /* LJCCameraRecorderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCCameraRecorderController.h; sourceTree = "<group>"; };
+		59C73B8F1FE8B7E600406AB4 /* LJCCameraRecorderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCCameraRecorderController.m; sourceTree = "<group>"; };
+		59C73B901FE8B7E600406AB4 /* LJCCameraRecordTipsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCCameraRecordTipsTool.h; sourceTree = "<group>"; };
+		59C73B911FE8B7E600406AB4 /* LJCCameraRecordTipsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCCameraRecordTipsTool.m; sourceTree = "<group>"; };
+		59C73B921FE8B7E600406AB4 /* LJCCameraRecordToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCCameraRecordToolBar.h; sourceTree = "<group>"; };
+		59C73B931FE8B7E600406AB4 /* LJCCameraRecordToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCCameraRecordToolBar.m; sourceTree = "<group>"; };
+		59C73B951FE8B7E600406AB4 /* LJCCameraRecordPreviewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCCameraRecordPreviewToolbar.h; sourceTree = "<group>"; };
+		59C73B961FE8B7E600406AB4 /* LJCCameraRecordPreviewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCCameraRecordPreviewToolbar.m; sourceTree = "<group>"; };
+		59C73B971FE8B7E600406AB4 /* LJCCameraRecordPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCCameraRecordPreviewView.h; sourceTree = "<group>"; };
+		59C73B981FE8B7E600406AB4 /* LJCCameraRecordPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCCameraRecordPreviewView.m; sourceTree = "<group>"; };
+		59C73BA31FE906AE00406AB4 /* UIImage+LJCOrietation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LJCOrietation.h"; sourceTree = "<group>"; };
+		59C73BA41FE906AE00406AB4 /* UIImage+LJCOrietation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LJCOrietation.m"; sourceTree = "<group>"; };
+		59D032401FCF97E3001B8AE0 /* LJCChatEmotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatEmotion.h; sourceTree = "<group>"; };
+		59D032411FCF97E3001B8AE0 /* LJCChatEmotion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatEmotion.m; sourceTree = "<group>"; };
+		59D032431FCF9AAD001B8AE0 /* EmoticonQQ.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonQQ.bundle; sourceTree = "<group>"; };
+		59D032441FCF9AAD001B8AE0 /* EmoticonWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonWeibo.bundle; sourceTree = "<group>"; };
+		59D032481FCFA55A001B8AE0 /* LJCChatEmojiInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCChatEmojiInputView.h; sourceTree = "<group>"; };
+		59D032491FCFA55A001B8AE0 /* LJCChatEmojiInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCChatEmojiInputView.m; sourceTree = "<group>"; };
+		59D0324B1FCFA55A001B8AE0 /* LJCChatMoreInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCChatMoreInputView.h; sourceTree = "<group>"; };
+		59D0324C1FCFA55A001B8AE0 /* LJCChatMoreInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCChatMoreInputView.m; sourceTree = "<group>"; };
+		59D0324F1FCFA5BB001B8AE0 /* LJCChatEmojiCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatEmojiCollectionView.h; sourceTree = "<group>"; };
+		59D032501FCFA5BB001B8AE0 /* LJCChatEmojiCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatEmojiCollectionView.m; sourceTree = "<group>"; };
+		59D032521FCFA5D4001B8AE0 /* LJCChatEmojiCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCChatEmojiCell.h; sourceTree = "<group>"; };
+		59D032531FCFA5D4001B8AE0 /* LJCChatEmojiCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCChatEmojiCell.m; sourceTree = "<group>"; };
+		59D660441FAAFAA800217A44 /* FPSDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSDisplay.h; sourceTree = "<group>"; };
+		59D660451FAAFAA800217A44 /* FPSDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSDisplay.m; sourceTree = "<group>"; };
+		59E4FCE61F98A4FE00FDD23B /* LJCDBStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJCDBStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E4FCE91F98A4FE00FDD23B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		59E4FCEA1F98A4FE00FDD23B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		59E4FCF21F98A4FE00FDD23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59E4FCF51F98A4FE00FDD23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59E4FCF71F98A4FE00FDD23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59E4FCF81F98A4FE00FDD23B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		59E4FCFE1F98A4FF00FDD23B /* LJCDBStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJCDBStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E4FD021F98A4FF00FDD23B /* LJCDBStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCDBStoreTests.m; sourceTree = "<group>"; };
+		59E4FD041F98A4FF00FDD23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59E4FD091F98A4FF00FDD23B /* LJCDBStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJCDBStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E4FD0D1F98A4FF00FDD23B /* LJCDBStoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCDBStoreUITests.m; sourceTree = "<group>"; };
+		59E4FD0F1F98A4FF00FDD23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59FA214F1FA6BFFE0048CC69 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		59FA21571FA701BB0048CC69 /* LJCRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCRequest.h; sourceTree = "<group>"; };
+		59FA21581FA701BB0048CC69 /* LJCRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCRequest.m; sourceTree = "<group>"; };
+		59FA215E1FA7147F0048CC69 /* LJCDoctorStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCDoctorStore.h; sourceTree = "<group>"; };
+		59FA21671FA715010048CC69 /* LJCDoctorStore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LJCDoctorStore.mm; sourceTree = "<group>"; };
+		73F86B4980EA5EED6E5770AE /* Pods_LJCDBStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LJCDBStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9091277D437C9740A23ADFBA /* Pods-LJCDBStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJCDBStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJCDBStore/Pods-LJCDBStore.debug.xcconfig"; sourceTree = "<group>"; };
+		F30531FF0BDF2E0F3EB961E4 /* Pods-LJCDBStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJCDBStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJCDBStore/Pods-LJCDBStore.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59E4FCE31F98A4FE00FDD23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7EF085C15719836E7E21AC /* Pods_LJCDBStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59E4FCFB1F98A4FF00FDD23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59E4FD061F98A4FF00FDD23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		590218311FA613A40098E37C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				59FA21561FA6FB320048CC69 /* Base */,
+				590218321FA614340098E37C /* Doctor */,
+				598CCD8A1FCC0BE4005366AF /* Chat */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		590218321FA614340098E37C /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				590218331FA616430098E37C /* LJCDoctorRequest.h */,
+				590218341FA616430098E37C /* LJCDoctorRequest.m */,
+				590218361FA620360098E37C /* LJCDoctorRequestManager.h */,
+				590218371FA620360098E37C /* LJCDoctorRequestManager.m */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		5924DE7E1FA76E6B0075E006 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				5924DE7F1FA76F290075E006 /* MJRefreshStateHeader+LJCSetting.h */,
+				5924DE801FA76F290075E006 /* MJRefreshStateHeader+LJCSetting.m */,
+				5924DE861FA775CA0075E006 /* MJRefreshBackStateFooter+LJCSetting.h */,
+				5924DE871FA775CA0075E006 /* MJRefreshBackStateFooter+LJCSetting.m */,
+				596D4C901FA9A45E00A85494 /* MJRefreshAutoNormalFooter+LJCSetting.h */,
+				596D4C911FA9A45E00A85494 /* MJRefreshAutoNormalFooter+LJCSetting.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		5924DE851FA770BD0075E006 /* LJCDoctorCells */ = {
+			isa = PBXGroup;
+			children = (
+				597584B91FA81E48003928DE /* LJCDoctorCell.h */,
+				597584BA1FA81E48003928DE /* LJCDoctorCell.m */,
+			);
+			path = LJCDoctorCells;
+			sourceTree = "<group>";
+		};
+		592D713B1FDA6F9A0092DEAE /* LJCVideoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				592D713C1FDA6FAE0092DEAE /* LJCVideoHelper.h */,
+				592D713D1FDA6FAE0092DEAE /* LJCVideoHelper.m */,
+			);
+			path = LJCVideoHelper;
+			sourceTree = "<group>";
+		};
+		59325B181FE769A30082A313 /* LJCCameraRecordProxy */ = {
+			isa = PBXGroup;
+			children = (
+				59325B1C1FE769CD0082A313 /* LJCCameraRecorderProxy.h */,
+				59325B1D1FE769CD0082A313 /* LJCCameraRecorderProxy.m */,
+				59C73B8D1FE8B7E600406AB4 /* LJCCameraRecordController */,
+				59C73B941FE8B7E600406AB4 /* LJCCameraRecordPreview */,
+			);
+			path = LJCCameraRecordProxy;
+			sourceTree = "<group>";
+		};
+		59325B281FE7BEF70082A313 /* LJCTouchDetector */ = {
+			isa = PBXGroup;
+			children = (
+				59325B291FE7BF0C0082A313 /* LJCTouchDetector.h */,
+				59325B2A1FE7BF0C0082A313 /* LJCTouchDetector.m */,
+			);
+			path = LJCTouchDetector;
+			sourceTree = "<group>";
+		};
+		593426901FB1462D00ED0E36 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				593426911FB1463B00ED0E36 /* LJCKeyboardViewController.h */,
+				593426921FB1463B00ED0E36 /* LJCKeyboardViewController.m */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		5939DD181FC55B5000E1B05C /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				596BFBD21FC664A800778D3C /* LJCChatCells */,
+				59ACA9061FE3B4E700EF25F8 /* LJCChatCellMenu */,
+				596BFBE21FC6687D00778D3C /* LJCChatLayouts */,
+				59C67F851FC69BDE00433863 /* LJCChatPerformer */,
+				596BFBD11FC664A800778D3C /* LJCChatInputView */,
+				5939DD191FC55B5C00E1B05C /* LJCChatViewController.h */,
+				5939DD1A1FC55B5C00E1B05C /* LJCChatViewController.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		5939DD1C1FC55CD600E1B05C /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				5939DD1D1FC55D2100E1B05C /* IQKeyboardManager+LJCAppearance.h */,
+				5939DD1E1FC55D2100E1B05C /* IQKeyboardManager+LJCAppearance.m */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		59436B4C1FD7CB8B00773370 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				596F95E12020537500FD342B /* YYCache+LJCFactory.h */,
+				596F95E02020537500FD342B /* YYCache+LJCFactory.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		59436B501FD7DFDA00773370 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				59436B511FD7E01100773370 /* NSString+LJCDateString.h */,
+				59436B521FD7E01100773370 /* NSString+LJCDateString.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		59436B551FD7F11600773370 /* LJCShapeImageView */ = {
+			isa = PBXGroup;
+			children = (
+				59436B561FD7F13100773370 /* LJCShapeImageView.h */,
+				59436B571FD7F13100773370 /* LJCShapeImageView.m */,
+			);
+			path = LJCShapeImageView;
+			sourceTree = "<group>";
+		};
+		596BFBD11FC664A800778D3C /* LJCChatInputView */ = {
+			isa = PBXGroup;
+			children = (
+				59D032471FCFA55A001B8AE0 /* LJCChatEmojiInputView */,
+				59D0324A1FCFA55A001B8AE0 /* LJCChatMoreInputView */,
+				598E93AB1FD4EDF800D78353 /* LJCChatToolbar */,
+			);
+			path = LJCChatInputView;
+			sourceTree = "<group>";
+		};
+		596BFBD21FC664A800778D3C /* LJCChatCells */ = {
+			isa = PBXGroup;
+			children = (
+				596BFBD61FC6661000778D3C /* LJCChatCell.h */,
+				596BFBD71FC6661000778D3C /* LJCChatCell.m */,
+				596BFBD91FC6662400778D3C /* LJCChatTextCell.h */,
+				596BFBDA1FC6662400778D3C /* LJCChatTextCell.m */,
+				596BFBDF1FC6664500778D3C /* LJCChatPhotoCell.h */,
+				596BFBE01FC6664500778D3C /* LJCChatPhotoCell.m */,
+				592D71381FDA361D0092DEAE /* LJCChatVideoCell.h */,
+				592D71391FDA361D0092DEAE /* LJCChatVideoCell.m */,
+				596BFBDC1FC6663600778D3C /* LJCChatVoiceCell.h */,
+				596BFBDD1FC6663600778D3C /* LJCChatVoiceCell.m */,
+			);
+			path = LJCChatCells;
+			sourceTree = "<group>";
+		};
+		596BFBE21FC6687D00778D3C /* LJCChatLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				596BFBE31FC6689700778D3C /* LJCChatLayoutConst.h */,
+				596BFBE41FC669D000778D3C /* LJCChatLayout.h */,
+				596BFBE51FC669D000778D3C /* LJCChatLayout.m */,
+			);
+			path = LJCChatLayouts;
+			sourceTree = "<group>";
+		};
+		596BFBE71FC6709200778D3C /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				59C67F891FC69CF400433863 /* LJCChatConst.h */,
+				59C67F811FC67AEF00433863 /* LJCChatModel+WCTTableCoding.h */,
+				59C67F821FC67AEF00433863 /* LJCChatModel.h */,
+				59C67F831FC67AEF00433863 /* LJCChatModel.mm */,
+				597B20CB1FFB1B2100C09775 /* LJCChatFTSModel+WCTTableCoding.h */,
+				597B20CC1FFB1B2100C09775 /* LJCChatFTSModel.h */,
+				597B20CD1FFB1B2100C09775 /* LJCChatFTSModel.mm */,
+				59D032401FCF97E3001B8AE0 /* LJCChatEmotion.h */,
+				59D032411FCF97E3001B8AE0 /* LJCChatEmotion.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		596F03081FAC054400D4D666 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				596F030E1FAC0A6300D4D666 /* LJCBaseHeightProtocol.h */,
+				596F030B1FAC0A4100D4D666 /* LJCBaseModel.h */,
+				596F030C1FAC0A4100D4D666 /* LJCBaseModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		596F030F1FAC4FB700D4D666 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				596BFBCE1FC662A800778D3C /* UITableView+LJCAppearance.h */,
+				596BFBCF1FC662A800778D3C /* UITableView+LJCAppearance.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		5972F5C01FA1E1E3005DD616 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5972F5C11FA1E208005DD616 /* SVProgressHUD+LJCExtension.h */,
+				5972F5C21FA1E208005DD616 /* SVProgressHUD+LJCExtension.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		5974FD5F1FA05EBC009EEAE7 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				5974FD601FA05EBC009EEAE7 /* LJCGameStore.h */,
+				5974FD611FA05EBC009EEAE7 /* LJCGameStore.mm */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		5974FD621FA05ED0009EEAE7 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				5974FD631FA05ED0009EEAE7 /* LJCGameModel+WCTTableCoding.h */,
+				5974FD641FA05ED0009EEAE7 /* LJCGameModel.h */,
+				5974FD651FA05ED0009EEAE7 /* LJCGameModel.mm */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		5974FD6E1FA08316009EEAE7 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				5974FD6F1FA08325009EEAE7 /* LJCDoctorModel+WCTTableCoding.h */,
+				5974FD701FA08325009EEAE7 /* LJCDoctorModel.h */,
+				5974FD711FA08325009EEAE7 /* LJCDoctorModel.mm */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		59766AD71FD683EA0008E2F8 /* LJCPhotoPickerProxy */ = {
+			isa = PBXGroup;
+			children = (
+				59766AD81FD683EA0008E2F8 /* LJCPhotoPickerProxy.h */,
+				59766AD91FD683EA0008E2F8 /* LJCPhotoPickerProxy.m */,
+			);
+			path = LJCPhotoPickerProxy;
+			sourceTree = "<group>";
+		};
+		59766ADB1FD6858E0008E2F8 /* LJCAuthorizationHelper */ = {
+			isa = PBXGroup;
+			children = (
+				59766ADC1FD6858E0008E2F8 /* LJCAuthorizationHelper.h */,
+				59766ADD1FD6858E0008E2F8 /* LJCAuthorizationHelper.m */,
+			);
+			path = LJCAuthorizationHelper;
+			sourceTree = "<group>";
+		};
+		59766ADE1FD6858E0008E2F8 /* LJCDeviceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				59766ADF1FD6858E0008E2F8 /* LJCDeviceHelper.h */,
+				59766AE01FD6858E0008E2F8 /* LJCDeviceHelper.m */,
+			);
+			path = LJCDeviceHelper;
+			sourceTree = "<group>";
+		};
+		59766AE31FD694D80008E2F8 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				59766AE41FD696080008E2F8 /* UIViewController+LJCHierarchy.h */,
+				59766AE51FD696080008E2F8 /* UIViewController+LJCHierarchy.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		597ADF881FDE2DF7008AF086 /* LJCPhotoBrowserProxy */ = {
+			isa = PBXGroup;
+			children = (
+				597ADF891FDE2E04008AF086 /* LJCPhotoBrowserProxy.h */,
+				597ADF8A1FDE2E04008AF086 /* LJCPhotoBrowserProxy.m */,
+				597ADF8C1FDE34DE008AF086 /* LJCChatPhotoBrowserProxy.h */,
+				597ADF8D1FDE34DE008AF086 /* LJCChatPhotoBrowserProxy.m */,
+			);
+			path = LJCPhotoBrowserProxy;
+			sourceTree = "<group>";
+		};
+		597F5AD21F9DBF650043D7F6 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				5974FD5F1FA05EBC009EEAE7 /* Game */,
+				599198341FA2C55400D6CBC5 /* Doctor */,
+				598CCD8E1FCC16F1005366AF /* Chat */,
+				597F5AE61F9DCAA00043D7F6 /* LJCStoreManager.h */,
+				599D1CDC1F9DCF2D00D91F42 /* LJCStoreManager.mm */,
+				59BA0DF41FEB4D9E00B82F44 /* LJCStoreMonitor.h */,
+				59BA0DF71FEB51D300B82F44 /* LJCStoreMonitor.mm */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		597F5AD41F9DBF650043D7F6 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				599D1CDE1F9DD5FF00D91F42 /* Root */,
+				5993E57F1F9ECFCB0093FC87 /* Game */,
+				5993E5801F9ECFCC0093FC87 /* Modify */,
+				599198331FA2C52E00D6CBC5 /* Doctor */,
+				59844C601FC285B7008BFECC /* DoctorYY */,
+				593426901FB1462D00ED0E36 /* Keyboard */,
+				5939DD181FC55B5000E1B05C /* Chat */,
+				5983120B1FF60D4D001AEDEA /* ChatSearch */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		597F5AD51F9DC35E0043D7F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				596F03081FAC054400D4D666 /* Base */,
+				5974FD621FA05ED0009EEAE7 /* Game */,
+				5974FD6E1FA08316009EEAE7 /* Doctor */,
+				596BFBE71FC6709200778D3C /* Chat */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		597F5AEA1F9DCC160043D7F6 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				59800EC61FBEC95000796392 /* YYKitMore */,
+				59D660431FAAFAA800217A44 /* FPSDisplayTool */,
+				59325B281FE7BEF70082A313 /* LJCTouchDetector */,
+				59325B181FE769A30082A313 /* LJCCameraRecordProxy */,
+				597ADF881FDE2DF7008AF086 /* LJCPhotoBrowserProxy */,
+				59766AD71FD683EA0008E2F8 /* LJCPhotoPickerProxy */,
+				59436B551FD7F11600773370 /* LJCShapeImageView */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		597F5AEB1F9DCC270043D7F6 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		597F5AEC1F9DCC330043D7F6 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				598CCD831FCBE460005366AF /* LJCMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		597F5AED1F9DCC330043D7F6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				59D032431FCF9AAD001B8AE0 /* EmoticonQQ.bundle */,
+				59D032441FCF9AAD001B8AE0 /* EmoticonWeibo.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		597FEF5B1FDFBD8800F80D9D /* MWPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				597FEF5C1FDFBD9E00F80D9D /* MWPhoto+LJCExtension.h */,
+				597FEF5D1FDFBD9E00F80D9D /* MWPhoto+LJCExtension.m */,
+			);
+			path = MWPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		59800EC61FBEC95000796392 /* YYKitMore */ = {
+			isa = PBXGroup;
+			children = (
+				59800EC71FBEC95000796392 /* YYFPSLabel.h */,
+				59800EC81FBEC95000796392 /* YYFPSLabel.m */,
+				597ADF851FDE2D6D008AF086 /* YYPhotoGroupView.h */,
+				597ADF861FDE2D6D008AF086 /* YYPhotoGroupView.m */,
+			);
+			path = YYKitMore;
+			sourceTree = "<group>";
+		};
+		5983120B1FF60D4D001AEDEA /* ChatSearch */ = {
+			isa = PBXGroup;
+			children = (
+				5983120C1FF60DA7001AEDEA /* LJCChatSearchViewController.h */,
+				5983120D1FF60DA7001AEDEA /* LJCChatSearchViewController.m */,
+			);
+			path = ChatSearch;
+			sourceTree = "<group>";
+		};
+		59844C601FC285B7008BFECC /* DoctorYY */ = {
+			isa = PBXGroup;
+			children = (
+				59844C611FC285CB008BFECC /* LJCDoctorYYCells */,
+				59844C651FC285F2008BFECC /* LJCDoctorYYViewController.h */,
+				59844C661FC285F2008BFECC /* LJCDoctorYYViewController.m */,
+			);
+			path = DoctorYY;
+			sourceTree = "<group>";
+		};
+		59844C611FC285CB008BFECC /* LJCDoctorYYCells */ = {
+			isa = PBXGroup;
+			children = (
+				59844C621FC285E3008BFECC /* LJCDoctorYYCell.h */,
+				59844C631FC285E3008BFECC /* LJCDoctorYYCell.m */,
+				59A72A761FC2BB25009C2F07 /* LJCDoctorYYLayout.h */,
+				59A72A771FC2BB25009C2F07 /* LJCDoctorYYLayout.m */,
+			);
+			path = LJCDoctorYYCells;
+			sourceTree = "<group>";
+		};
+		598CCD8A1FCC0BE4005366AF /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				598CCD8B1FCC0CB1005366AF /* LJCChatRequestManager.h */,
+				59A2C0F41FCE85A400B9B44D /* LJCChatRequestManager.mm */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		598CCD8E1FCC16F1005366AF /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				598CCD8F1FCC1715005366AF /* LJCChatStore.h */,
+				598CCD921FCC1722005366AF /* LJCChatStore.mm */,
+				597B20CF1FFB1DEE00C09775 /* LJCChatFTSStore.h */,
+				597B20D21FFB1E0100C09775 /* LJCChatFTSStore.mm */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		598E93AB1FD4EDF800D78353 /* LJCChatToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				598E93B01FD4EDF800D78353 /* LJCChatToolbar.h */,
+				598E93B11FD4EDF800D78353 /* LJCChatToolbar.m */,
+				598E93AC1FD4EDF800D78353 /* LJCChatTextField.h */,
+				598E93AD1FD4EDF800D78353 /* LJCChatTextField.m */,
+				598E93AE1FD4EDF800D78353 /* LJCChatToggleButton.h */,
+				598E93AF1FD4EDF800D78353 /* LJCChatToggleButton.m */,
+			);
+			path = LJCChatToolbar;
+			sourceTree = "<group>";
+		};
+		599198331FA2C52E00D6CBC5 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				5924DE851FA770BD0075E006 /* LJCDoctorCells */,
+				599198351FA2C56900D6CBC5 /* LJCDoctorViewController.h */,
+				599198361FA2C56900D6CBC5 /* LJCDoctorViewController.m */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		599198341FA2C55400D6CBC5 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				59FA215E1FA7147F0048CC69 /* LJCDoctorStore.h */,
+				59FA21671FA715010048CC69 /* LJCDoctorStore.mm */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		5993E57F1F9ECFCB0093FC87 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				5993E5811F9ED3FA0093FC87 /* LJCGameViewController.h */,
+				5993E5821F9ED3FA0093FC87 /* LJCGameViewController.m */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		5993E5801F9ECFCC0093FC87 /* Modify */ = {
+			isa = PBXGroup;
+			children = (
+				5939FC401F9F3D4400F09082 /* LJCGameModifyViewController.h */,
+				5939FC411F9F3D4400F09082 /* LJCGameModifyViewController.m */,
+			);
+			path = Modify;
+			sourceTree = "<group>";
+		};
+		599D1CD41F9DCD6200D91F42 /* Catogroy */ = {
+			isa = PBXGroup;
+			children = (
+				59FA214F1FA6BFFE0048CC69 /* Foundation+Log.m */,
+				5939DD1C1FC55CD600E1B05C /* IQKeyboardManager */,
+				5924DE7E1FA76E6B0075E006 /* MJRefresh */,
+				597FEF5B1FDFBD8800F80D9D /* MWPhotoBrowser */,
+				599D1CD51F9DCD6200D91F42 /* NSFileManager */,
+				59436B501FD7DFDA00773370 /* NSString */,
+				5972F5C01FA1E1E3005DD616 /* SVProgressHUD */,
+				59C73BA21FE9069900406AB4 /* UIImage */,
+				59A2C0F01FCE612E00B9B44D /* UIScrollView */,
+				596F030F1FAC4FB700D4D666 /* UITableView */,
+				59766AE31FD694D80008E2F8 /* UIViewController */,
+				59436B4C1FD7CB8B00773370 /* YYCache */,
+			);
+			path = Catogroy;
+			sourceTree = "<group>";
+		};
+		599D1CD51F9DCD6200D91F42 /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				599D1CD81F9DCD6200D91F42 /* NSFileManager+Paths.h */,
+				599D1CD91F9DCD6200D91F42 /* NSFileManager+Paths.m */,
+				599D1CD61F9DCD6200D91F42 /* NSFileManager+LJCDBStore.h */,
+				599D1CD71F9DCD6200D91F42 /* NSFileManager+LJCDBStore.m */,
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
+		599D1CDE1F9DD5FF00D91F42 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				599D1CE01F9DD83600D91F42 /* LJCRootViewController.h */,
+				599D1CE11F9DD83600D91F42 /* LJCRootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		599D1CE31F9DDCBF00D91F42 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				59FA21511FA6C3460048CC69 /* Helper */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		59A2C0F01FCE612E00B9B44D /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				59A2C0F11FCE617200B9B44D /* UIScrollView+LJC_YYAdd.h */,
+				59A2C0F21FCE617200B9B44D /* UIScrollView+LJC_YYAdd.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		59ACA9061FE3B4E700EF25F8 /* LJCChatCellMenu */ = {
+			isa = PBXGroup;
+			children = (
+				59ACA9071FE3B4FF00EF25F8 /* LJCChatCellMenu.h */,
+				59ACA9081FE3B4FF00EF25F8 /* LJCChatCellMenu.m */,
+			);
+			path = LJCChatCellMenu;
+			sourceTree = "<group>";
+		};
+		59C67F851FC69BDE00433863 /* LJCChatPerformer */ = {
+			isa = PBXGroup;
+			children = (
+				59C67F861FC69BEB00433863 /* LJCChatPerformer.h */,
+				59C67F871FC69BEB00433863 /* LJCChatPerformer.m */,
+				59A2C0FD1FCEA3D000B9B44D /* LJCChatHelper.h */,
+				59A2C0FE1FCEA3D000B9B44D /* LJCChatHelper.m */,
+			);
+			path = LJCChatPerformer;
+			sourceTree = "<group>";
+		};
+		59C73B8D1FE8B7E600406AB4 /* LJCCameraRecordController */ = {
+			isa = PBXGroup;
+			children = (
+				59C73B8E1FE8B7E600406AB4 /* LJCCameraRecorderController.h */,
+				59C73B8F1FE8B7E600406AB4 /* LJCCameraRecorderController.m */,
+				59C73B901FE8B7E600406AB4 /* LJCCameraRecordTipsTool.h */,
+				59C73B911FE8B7E600406AB4 /* LJCCameraRecordTipsTool.m */,
+				59C73B921FE8B7E600406AB4 /* LJCCameraRecordToolBar.h */,
+				59C73B931FE8B7E600406AB4 /* LJCCameraRecordToolBar.m */,
+			);
+			path = LJCCameraRecordController;
+			sourceTree = "<group>";
+		};
+		59C73B941FE8B7E600406AB4 /* LJCCameraRecordPreview */ = {
+			isa = PBXGroup;
+			children = (
+				59C73B971FE8B7E600406AB4 /* LJCCameraRecordPreviewView.h */,
+				59C73B981FE8B7E600406AB4 /* LJCCameraRecordPreviewView.m */,
+				59C73B951FE8B7E600406AB4 /* LJCCameraRecordPreviewToolbar.h */,
+				59C73B961FE8B7E600406AB4 /* LJCCameraRecordPreviewToolbar.m */,
+				59483D2D1FEA5806002113AB /* SCRecordSession+LJCExtension.h */,
+				59483D2E1FEA5806002113AB /* SCRecordSession+LJCExtension.m */,
+			);
+			path = LJCCameraRecordPreview;
+			sourceTree = "<group>";
+		};
+		59C73BA21FE9069900406AB4 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				59C73BA31FE906AE00406AB4 /* UIImage+LJCOrietation.h */,
+				59C73BA41FE906AE00406AB4 /* UIImage+LJCOrietation.m */,
+				59483D241FEA12FE002113AB /* UIImage+LJCVideoThumb.h */,
+				59483D251FEA12FE002113AB /* UIImage+LJCVideoThumb.m */,
+			);
+			name = UIImage;
+			path = LJCDBStore/Catogroy/UIImage;
+			sourceTree = SOURCE_ROOT;
+		};
+		59D032471FCFA55A001B8AE0 /* LJCChatEmojiInputView */ = {
+			isa = PBXGroup;
+			children = (
+				59D032481FCFA55A001B8AE0 /* LJCChatEmojiInputView.h */,
+				59D032491FCFA55A001B8AE0 /* LJCChatEmojiInputView.m */,
+				59B129961FD1071100F50ABD /* LJCChatEmojiToolbar.h */,
+				59B129971FD1071100F50ABD /* LJCChatEmojiToolbar.m */,
+				59D0324F1FCFA5BB001B8AE0 /* LJCChatEmojiCollectionView.h */,
+				59D032501FCFA5BB001B8AE0 /* LJCChatEmojiCollectionView.m */,
+				59D032521FCFA5D4001B8AE0 /* LJCChatEmojiCell.h */,
+				59D032531FCFA5D4001B8AE0 /* LJCChatEmojiCell.m */,
+			);
+			path = LJCChatEmojiInputView;
+			sourceTree = "<group>";
+		};
+		59D0324A1FCFA55A001B8AE0 /* LJCChatMoreInputView */ = {
+			isa = PBXGroup;
+			children = (
+				59D0324B1FCFA55A001B8AE0 /* LJCChatMoreInputView.h */,
+				59D0324C1FCFA55A001B8AE0 /* LJCChatMoreInputView.m */,
+				598E93B51FD5283700D78353 /* LJCChatMoreCell.h */,
+				598E93B61FD5283700D78353 /* LJCChatMoreCell.m */,
+				598E93B81FD531C500D78353 /* LJCChatMoreConst.h */,
+			);
+			path = LJCChatMoreInputView;
+			sourceTree = "<group>";
+		};
+		59D660431FAAFAA800217A44 /* FPSDisplayTool */ = {
+			isa = PBXGroup;
+			children = (
+				59D660441FAAFAA800217A44 /* FPSDisplay.h */,
+				59D660451FAAFAA800217A44 /* FPSDisplay.m */,
+			);
+			path = FPSDisplayTool;
+			sourceTree = "<group>";
+		};
+		59E4FCDD1F98A4FE00FDD23B = {
+			isa = PBXGroup;
+			children = (
+				59E4FCE81F98A4FE00FDD23B /* LJCDBStore */,
+				59E4FD011F98A4FF00FDD23B /* LJCDBStoreTests */,
+				59E4FD0C1F98A4FF00FDD23B /* LJCDBStoreUITests */,
+				59E4FCE71F98A4FE00FDD23B /* Products */,
+				6D091E75760269FB5560CC8D /* Pods */,
+				DC049A17710CD1C9FAAA0D7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		59E4FCE71F98A4FE00FDD23B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59E4FCE61F98A4FE00FDD23B /* LJCDBStore.app */,
+				59E4FCFE1F98A4FF00FDD23B /* LJCDBStoreTests.xctest */,
+				59E4FD091F98A4FF00FDD23B /* LJCDBStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59E4FCE81F98A4FE00FDD23B /* LJCDBStore */ = {
+			isa = PBXGroup;
+			children = (
+				597F5AEB1F9DCC270043D7F6 /* Vendor */,
+				597F5AEA1F9DCC160043D7F6 /* Component */,
+				599D1CD41F9DCD6200D91F42 /* Catogroy */,
+				599D1CE31F9DDCBF00D91F42 /* Utility */,
+				597F5AEC1F9DCC330043D7F6 /* Macro */,
+				590218311FA613A40098E37C /* Network */,
+				597F5AD21F9DBF650043D7F6 /* Store */,
+				597F5AD51F9DC35E0043D7F6 /* Model */,
+				597F5AD41F9DBF650043D7F6 /* Section */,
+				597F5AED1F9DCC330043D7F6 /* Resource */,
+				59E4FCE91F98A4FE00FDD23B /* AppDelegate.h */,
+				59E4FCEA1F98A4FE00FDD23B /* AppDelegate.m */,
+				59E4FCF21F98A4FE00FDD23B /* Assets.xcassets */,
+				59E4FCF41F98A4FE00FDD23B /* LaunchScreen.storyboard */,
+				599D1CDB1F9DCE4B00D91F42 /* LJCDBStore-prefix.pch */,
+				59E4FCF71F98A4FE00FDD23B /* Info.plist */,
+				59E4FCF81F98A4FE00FDD23B /* main.m */,
+			);
+			path = LJCDBStore;
+			sourceTree = "<group>";
+		};
+		59E4FD011F98A4FF00FDD23B /* LJCDBStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				59E4FD021F98A4FF00FDD23B /* LJCDBStoreTests.m */,
+				59E4FD041F98A4FF00FDD23B /* Info.plist */,
+			);
+			path = LJCDBStoreTests;
+			sourceTree = "<group>";
+		};
+		59E4FD0C1F98A4FF00FDD23B /* LJCDBStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59E4FD0D1F98A4FF00FDD23B /* LJCDBStoreUITests.m */,
+				59E4FD0F1F98A4FF00FDD23B /* Info.plist */,
+			);
+			path = LJCDBStoreUITests;
+			sourceTree = "<group>";
+		};
+		59FA21511FA6C3460048CC69 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				59766ADB1FD6858E0008E2F8 /* LJCAuthorizationHelper */,
+				59766ADE1FD6858E0008E2F8 /* LJCDeviceHelper */,
+				592D713B1FDA6F9A0092DEAE /* LJCVideoHelper */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		59FA21561FA6FB320048CC69 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5924DE7C1FA7561F0075E006 /* LJCNetworkConfig.h */,
+				59FA21571FA701BB0048CC69 /* LJCRequest.h */,
+				59FA21581FA701BB0048CC69 /* LJCRequest.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6D091E75760269FB5560CC8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9091277D437C9740A23ADFBA /* Pods-LJCDBStore.debug.xcconfig */,
+				F30531FF0BDF2E0F3EB961E4 /* Pods-LJCDBStore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC049A17710CD1C9FAAA0D7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73F86B4980EA5EED6E5770AE /* Pods_LJCDBStore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59E4FCE51F98A4FE00FDD23B /* LJCDBStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59E4FD121F98A4FF00FDD23B /* Build configuration list for PBXNativeTarget "LJCDBStore" */;
+			buildPhases = (
+				A29E45FF5F9C606877DACAEC /* [CP] Check Pods Manifest.lock */,
+				59E4FCE21F98A4FE00FDD23B /* Sources */,
+				59E4FCE31F98A4FE00FDD23B /* Frameworks */,
+				59E4FCE41F98A4FE00FDD23B /* Resources */,
+				17DD4BC37BE675EC699A4B0A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LJCDBStore;
+			productName = LJCDBStore;
+			productReference = 59E4FCE61F98A4FE00FDD23B /* LJCDBStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59E4FCFD1F98A4FF00FDD23B /* LJCDBStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59E4FD151F98A4FF00FDD23B /* Build configuration list for PBXNativeTarget "LJCDBStoreTests" */;
+			buildPhases = (
+				59E4FCFA1F98A4FF00FDD23B /* Sources */,
+				59E4FCFB1F98A4FF00FDD23B /* Frameworks */,
+				59E4FCFC1F98A4FF00FDD23B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59E4FD001F98A4FF00FDD23B /* PBXTargetDependency */,
+			);
+			name = LJCDBStoreTests;
+			productName = LJCDBStoreTests;
+			productReference = 59E4FCFE1F98A4FF00FDD23B /* LJCDBStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59E4FD081F98A4FF00FDD23B /* LJCDBStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59E4FD181F98A4FF00FDD23B /* Build configuration list for PBXNativeTarget "LJCDBStoreUITests" */;
+			buildPhases = (
+				59E4FD051F98A4FF00FDD23B /* Sources */,
+				59E4FD061F98A4FF00FDD23B /* Frameworks */,
+				59E4FD071F98A4FF00FDD23B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59E4FD0B1F98A4FF00FDD23B /* PBXTargetDependency */,
+			);
+			name = LJCDBStoreUITests;
+			productName = LJCDBStoreUITests;
+			productReference = 59E4FD091F98A4FF00FDD23B /* LJCDBStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59E4FCDE1F98A4FE00FDD23B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "林锦超";
+				TargetAttributes = {
+					59E4FCE51F98A4FE00FDD23B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					59E4FCFD1F98A4FF00FDD23B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59E4FCE51F98A4FE00FDD23B;
+					};
+					59E4FD081F98A4FF00FDD23B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59E4FCE51F98A4FE00FDD23B;
+					};
+				};
+			};
+			buildConfigurationList = 59E4FCE11F98A4FE00FDD23B /* Build configuration list for PBXProject "LJCDBStore" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59E4FCDD1F98A4FE00FDD23B;
+			productRefGroup = 59E4FCE71F98A4FE00FDD23B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59E4FCE51F98A4FE00FDD23B /* LJCDBStore */,
+				59E4FCFD1F98A4FF00FDD23B /* LJCDBStoreTests */,
+				59E4FD081F98A4FF00FDD23B /* LJCDBStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59E4FCE41F98A4FE00FDD23B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D032461FCF9AAD001B8AE0 /* EmoticonWeibo.bundle in Resources */,
+				59D032451FCF9AAD001B8AE0 /* EmoticonQQ.bundle in Resources */,
+				59E4FCF61F98A4FE00FDD23B /* LaunchScreen.storyboard in Resources */,
+				59E4FCF31F98A4FE00FDD23B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59E4FCFC1F98A4FF00FDD23B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59E4FD071F98A4FF00FDD23B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17DD4BC37BE675EC699A4B0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LJCDBStore/Pods-LJCDBStore-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/LLSimpleCamera/LLSimpleCamera.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MWPhotoBrowser/MWPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SCRecorder/SCRecorder.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDB/WCDB.framework",
+				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLSimpleCamera.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MWPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCRecorder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LJCDBStore/Pods-LJCDBStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A29E45FF5F9C606877DACAEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LJCDBStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59E4FCE21F98A4FE00FDD23B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59483D2F1FEA5806002113AB /* SCRecordSession+LJCExtension.m in Sources */,
+				59B129981FD1071100F50ABD /* LJCChatEmojiToolbar.m in Sources */,
+				59FA21681FA715010048CC69 /* LJCDoctorStore.mm in Sources */,
+				5974FD661FA05F00009EEAE7 /* LJCGameStore.mm in Sources */,
+				59BA0DF81FEB51D300B82F44 /* LJCStoreMonitor.mm in Sources */,
+				592D713A1FDA361D0092DEAE /* LJCChatVideoCell.m in Sources */,
+				59D032541FCFA5D4001B8AE0 /* LJCChatEmojiCell.m in Sources */,
+				5924DE811FA76F290075E006 /* MJRefreshStateHeader+LJCSetting.m in Sources */,
+				5974FD721FA08325009EEAE7 /* LJCDoctorModel.mm in Sources */,
+				5974FD671FA05F00009EEAE7 /* LJCGameModel.mm in Sources */,
+				59D660461FAAFAA800217A44 /* FPSDisplay.m in Sources */,
+				596BFBD01FC662A800778D3C /* UITableView+LJCAppearance.m in Sources */,
+				596BFBDE1FC6663600778D3C /* LJCChatVoiceCell.m in Sources */,
+				597584BB1FA81E48003928DE /* LJCDoctorCell.m in Sources */,
+				59766AE61FD696080008E2F8 /* UIViewController+LJCHierarchy.m in Sources */,
+				5939FC431F9F403300F09082 /* NSFileManager+Paths.m in Sources */,
+				5939FC441F9F403300F09082 /* NSFileManager+LJCDBStore.m in Sources */,
+				59C73B9C1FE8B7E700406AB4 /* LJCCameraRecordPreviewToolbar.m in Sources */,
+				59C73B9B1FE8B7E700406AB4 /* LJCCameraRecordToolBar.m in Sources */,
+				59436B581FD7F13100773370 /* LJCShapeImageView.m in Sources */,
+				59766ADA1FD683EA0008E2F8 /* LJCPhotoPickerProxy.m in Sources */,
+				59A2C0F51FCE85A400B9B44D /* LJCChatRequestManager.mm in Sources */,
+				5983120E1FF60DA7001AEDEA /* LJCChatSearchViewController.m in Sources */,
+				596BFBDB1FC6662400778D3C /* LJCChatTextCell.m in Sources */,
+				5939DD1B1FC55B5C00E1B05C /* LJCChatViewController.m in Sources */,
+				5993E5831F9ED3FA0093FC87 /* LJCGameViewController.m in Sources */,
+				598E93B21FD4EDF800D78353 /* LJCChatTextField.m in Sources */,
+				59A2C0F31FCE617200B9B44D /* UIScrollView+LJC_YYAdd.m in Sources */,
+				59E4FCF91F98A4FE00FDD23B /* main.m in Sources */,
+				59A72A781FC2BB25009C2F07 /* LJCDoctorYYLayout.m in Sources */,
+				592D713E1FDA6FAE0092DEAE /* LJCVideoHelper.m in Sources */,
+				597ADF8B1FDE2E04008AF086 /* LJCPhotoBrowserProxy.m in Sources */,
+				5972F5C31FA1E208005DD616 /* SVProgressHUD+LJCExtension.m in Sources */,
+				59800EC91FBEC95000796392 /* YYFPSLabel.m in Sources */,
+				59C73B9D1FE8B7E700406AB4 /* LJCCameraRecordPreviewView.m in Sources */,
+				598CCD931FCC1722005366AF /* LJCChatStore.mm in Sources */,
+				596BFBE61FC669D000778D3C /* LJCChatLayout.m in Sources */,
+				59766AE11FD6858E0008E2F8 /* LJCAuthorizationHelper.m in Sources */,
+				5939FC421F9F3D4400F09082 /* LJCGameModifyViewController.m in Sources */,
+				590218381FA620360098E37C /* LJCDoctorRequestManager.m in Sources */,
+				59D0324E1FCFA55A001B8AE0 /* LJCChatMoreInputView.m in Sources */,
+				596BFBD81FC6661000778D3C /* LJCChatCell.m in Sources */,
+				599D1CDD1F9DCF2D00D91F42 /* LJCStoreManager.mm in Sources */,
+				598E93B41FD4EDF800D78353 /* LJCChatToolbar.m in Sources */,
+				598E93B71FD5283700D78353 /* LJCChatMoreCell.m in Sources */,
+				5939DD1F1FC55D2100E1B05C /* IQKeyboardManager+LJCAppearance.m in Sources */,
+				59A2C0FF1FCEA3D000B9B44D /* LJCChatHelper.m in Sources */,
+				59ACA9091FE3B4FF00EF25F8 /* LJCChatCellMenu.m in Sources */,
+				59325B2B1FE7BF0C0082A313 /* LJCTouchDetector.m in Sources */,
+				597B20CE1FFB1B2100C09775 /* LJCChatFTSModel.mm in Sources */,
+				59844C641FC285E3008BFECC /* LJCDoctorYYCell.m in Sources */,
+				596BFBE11FC6664500778D3C /* LJCChatPhotoCell.m in Sources */,
+				59D0324D1FCFA55A001B8AE0 /* LJCChatEmojiInputView.m in Sources */,
+				59E4FCEB1F98A4FE00FDD23B /* AppDelegate.m in Sources */,
+				597ADF8E1FDE34DE008AF086 /* LJCChatPhotoBrowserProxy.m in Sources */,
+				593426931FB1463B00ED0E36 /* LJCKeyboardViewController.m in Sources */,
+				59436B531FD7E01100773370 /* NSString+LJCDateString.m in Sources */,
+				597FEF5E1FDFBD9E00F80D9D /* MWPhoto+LJCExtension.m in Sources */,
+				59FA21591FA701BB0048CC69 /* LJCRequest.m in Sources */,
+				59C73B991FE8B7E700406AB4 /* LJCCameraRecorderController.m in Sources */,
+				596D4C921FA9A45E00A85494 /* MJRefreshAutoNormalFooter+LJCSetting.m in Sources */,
+				596F030D1FAC0A4100D4D666 /* LJCBaseModel.m in Sources */,
+				597ADF871FDE2D6D008AF086 /* YYPhotoGroupView.m in Sources */,
+				59D032421FCF97E3001B8AE0 /* LJCChatEmotion.m in Sources */,
+				59766AE21FD6858E0008E2F8 /* LJCDeviceHelper.m in Sources */,
+				59325B1E1FE769CD0082A313 /* LJCCameraRecorderProxy.m in Sources */,
+				596F95E22020537500FD342B /* YYCache+LJCFactory.m in Sources */,
+				59C67F881FC69BEB00433863 /* LJCChatPerformer.m in Sources */,
+				5924DE881FA775CA0075E006 /* MJRefreshBackStateFooter+LJCSetting.m in Sources */,
+				59844C671FC285F2008BFECC /* LJCDoctorYYViewController.m in Sources */,
+				59483D261FEA12FE002113AB /* UIImage+LJCVideoThumb.m in Sources */,
+				599198371FA2C56900D6CBC5 /* LJCDoctorViewController.m in Sources */,
+				590218351FA616430098E37C /* LJCDoctorRequest.m in Sources */,
+				59C73B9A1FE8B7E700406AB4 /* LJCCameraRecordTipsTool.m in Sources */,
+				59D032511FCFA5BB001B8AE0 /* LJCChatEmojiCollectionView.m in Sources */,
+				599D1CE21F9DD83600D91F42 /* LJCRootViewController.m in Sources */,
+				597B20D31FFB1E0100C09775 /* LJCChatFTSStore.mm in Sources */,
+				59C67F841FC67AEF00433863 /* LJCChatModel.mm in Sources */,
+				59FA21501FA6BFFE0048CC69 /* Foundation+Log.m in Sources */,
+				598E93B31FD4EDF800D78353 /* LJCChatToggleButton.m in Sources */,
+				59C73BA51FE906AE00406AB4 /* UIImage+LJCOrietation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59E4FCFA1F98A4FF00FDD23B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E4FD031F98A4FF00FDD23B /* LJCDBStoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59E4FD051F98A4FF00FDD23B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E4FD0E1F98A4FF00FDD23B /* LJCDBStoreUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59E4FD001F98A4FF00FDD23B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59E4FCE51F98A4FE00FDD23B /* LJCDBStore */;
+			targetProxy = 59E4FCFF1F98A4FF00FDD23B /* PBXContainerItemProxy */;
+		};
+		59E4FD0B1F98A4FF00FDD23B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59E4FCE51F98A4FE00FDD23B /* LJCDBStore */;
+			targetProxy = 59E4FD0A1F98A4FF00FDD23B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59E4FCF41F98A4FE00FDD23B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59E4FCF51F98A4FE00FDD23B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59E4FD101F98A4FF00FDD23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		59E4FD111F98A4FF00FDD23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59E4FD131F98A4FF00FDD23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9091277D437C9740A23ADFBA /* Pods-LJCDBStore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JX25M4H93V;
+				GCC_PRECOMPILE_PREFIX_HEADER = "$(inherited)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LJCDBStore/LJCDBStore-prefix.pch";
+				INFOPLIST_FILE = LJCDBStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hope.LJCDBStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Wno-strict-prototypes",
+					"-Wno-documentation",
+					"-Wno-nullability-completeness-on-arrays",
+				);
+			};
+			name = Debug;
+		};
+		59E4FD141F98A4FF00FDD23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F30531FF0BDF2E0F3EB961E4 /* Pods-LJCDBStore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JX25M4H93V;
+				GCC_PRECOMPILE_PREFIX_HEADER = "$(inherited)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LJCDBStore/LJCDBStore-prefix.pch";
+				INFOPLIST_FILE = LJCDBStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hope.LJCDBStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Wno-strict-prototypes",
+					"-Wno-documentation",
+					"-Wno-nullability-completeness-on-arrays",
+				);
+			};
+			name = Release;
+		};
+		59E4FD161F98A4FF00FDD23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8L6HPM4D4;
+				INFOPLIST_FILE = LJCDBStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hope.LJCDBStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LJCDBStore.app/LJCDBStore";
+			};
+			name = Debug;
+		};
+		59E4FD171F98A4FF00FDD23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8L6HPM4D4;
+				INFOPLIST_FILE = LJCDBStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hope.LJCDBStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LJCDBStore.app/LJCDBStore";
+			};
+			name = Release;
+		};
+		59E4FD191F98A4FF00FDD23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8L6HPM4D4;
+				INFOPLIST_FILE = LJCDBStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hope.LJCDBStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LJCDBStore;
+			};
+			name = Debug;
+		};
+		59E4FD1A1F98A4FF00FDD23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8L6HPM4D4;
+				INFOPLIST_FILE = LJCDBStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hope.LJCDBStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LJCDBStore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59E4FCE11F98A4FE00FDD23B /* Build configuration list for PBXProject "LJCDBStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59E4FD101F98A4FF00FDD23B /* Debug */,
+				59E4FD111F98A4FF00FDD23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59E4FD121F98A4FF00FDD23B /* Build configuration list for PBXNativeTarget "LJCDBStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59E4FD131F98A4FF00FDD23B /* Debug */,
+				59E4FD141F98A4FF00FDD23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59E4FD151F98A4FF00FDD23B /* Build configuration list for PBXNativeTarget "LJCDBStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59E4FD161F98A4FF00FDD23B /* Debug */,
+				59E4FD171F98A4FF00FDD23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59E4FD181F98A4FF00FDD23B /* Build configuration list for PBXNativeTarget "LJCDBStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59E4FD191F98A4FF00FDD23B /* Debug */,
+				59E4FD1A1F98A4FF00FDD23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59E4FCDE1F98A4FE00FDD23B /* Project object */;
+}
