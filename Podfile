@@ -27,7 +27,7 @@ target "LJCDBStore" do
     pod 'IQKeyboardManager' #, '~> 5.0.6'
     #pod 'ChameleonFramework'    #颜色框架
     pod 'MWPhotoBrowser'    #, '~> 2.1.2'
-    pod 'TZImagePickerController'
+    pod 'TZImagePickerController', '~> 3.8.6'
     pod 'SCRecorder'
     pod 'LLSimpleCamera'
     

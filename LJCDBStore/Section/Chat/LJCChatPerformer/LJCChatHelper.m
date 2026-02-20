@@ -92,6 +92,7 @@
     
     return [formatterFullDate stringFromDate:date];
     
+    /*
     NSDate *now = [NSDate new];
     NSTimeInterval delta = now.timeIntervalSince1970 - date.timeIntervalSince1970;
     if (delta < -60 * 10) { // 本地时间有问题
@@ -108,7 +109,7 @@
         return [formatterSameYear stringFromDate:date];
     } else {
         return [formatterFullDate stringFromDate:date];
-    }
+    }*/
 }
 
 #pragma mark - bubble

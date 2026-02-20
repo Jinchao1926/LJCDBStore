@@ -108,7 +108,7 @@ NSString *const LJCChatRequestManagerToUserName = @"LJCChatRequestManagerToUserN
     chat.fileURL = [NSURL URLWithString:cacheName];
     chat.photoWidth = round(image.size.width);
     chat.photoHeight = round(image.size.height);
-    BOOL insert = [LJCChatStore insertChatMessage:chat];
+    [LJCChatStore insertChatMessage:chat];
  
     // 1s delay, simulate HTTP Request
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -117,7 +117,7 @@ NSString *const LJCChatRequestManagerToUserName = @"LJCChatRequestManagerToUserN
         chat.fileId = [NSString stringWithFormat:@"image_%zd_001", chat.chatServerId];
 
         NSString *oldCachePath = chat.fileURL.absoluteString;
-        NSString *newCachePath = [[oldCachePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:chat.fileId];
+//        NSString *newCachePath = [[oldCachePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:chat.fileId];
 
         // recache
         chat.fileURL = [self p_recacheFile:chat.fileURL withId:chat.fileId inCache:[YYCache chatImageCache]];
@@ -187,10 +187,12 @@ NSString *const LJCChatRequestManagerToUserName = @"LJCChatRequestManagerToUserN
     chat.isAutoIncrement = YES;
     chat.fromUserId = self.chatUserData[LJCChatRequestManagerFromUserId];
     chat.fromUserName = self.chatUserData[LJCChatRequestManagerFromUserName];
-    chat.fromUserAvatarURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/image/getIcon/4/%@", LJC_BASE_URL, chat.fromUserId]];
+//    chat.fromUserAvatarURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/image/getIcon/4/%@", LJC_BASE_URL, chat.fromUserId]];   // Invalid image server
+    chat.fromUserAvatarURL = [NSURL URLWithString:@"https://avatars.githubusercontent.com/u/51687782?v=4"];
     chat.toUserId = self.chatUserData[LJCChatRequestManagerToUserId];
     chat.toUserName = self.chatUserData[LJCChatRequestManagerToUserName];
-    chat.toUserAvatarURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/image/getIcon/4/%@", LJC_BASE_URL, chat.toUserId]];
+//    chat.toUserAvatarURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/image/getIcon/4/%@", LJC_BASE_URL, chat.toUserId]];
+    chat.toUserAvatarURL = [NSURL URLWithString:@"https://avatars.githubusercontent.com/u/22309582?v=4"];
     
     chat.createTime = [NSDate new];
     chat.sendState = LJCChatSendStateSending;
