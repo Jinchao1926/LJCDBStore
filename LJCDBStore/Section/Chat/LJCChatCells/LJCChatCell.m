@@ -91,7 +91,11 @@
     self.avatarView.top = self.timeLabel.bottom + layout.bubbleMarginTop;
     self.avatarView.left = isMessageFromSelf ? kScreenWidth - kChatAvatarMargin - kChatAvatarLength : kChatAvatarMargin;
     self.avatarView.size = CGSizeMake(kChatAvatarLength, kChatAvatarLength);
-    [self.avatarView setImageWithURL:(isMessageFromSelf ? layout.chat.fromUserAvatarURL : layout.chat.toUserAvatarURL) forState:UIControlStateNormal options:YYWebImageOptionProgressiveBlur | YYWebImageOptionSetImageWithFadeAnimation];
+    [self.avatarView setImageWithURL:(isMessageFromSelf ? layout.chat.fromUserAvatarURL : layout.chat.toUserAvatarURL)
+                            forState:UIControlStateNormal
+                         placeholder:[UIImage imageNamed:@"placeholder_avatar"]
+                             options:YYWebImageOptionProgressiveBlur | YYWebImageOptionSetImageWithFadeAnimation
+                          completion:nil];
     
     // bubble
     self.bubbleView.top = self.avatarView.top;

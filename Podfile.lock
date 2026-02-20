@@ -43,7 +43,11 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SVProgressHUD (2.2.2)
-  - TZImagePickerController (1.9.6)
+  - TZImagePickerController (3.8.12):
+    - TZImagePickerController/Basic (= 3.8.12)
+    - TZImagePickerController/Location (= 3.8.12)
+  - TZImagePickerController/Basic (3.8.12)
+  - TZImagePickerController/Location (3.8.12)
   - WCDB.objc (2.1.15):
     - WCDBOptimizedSQLCipher (= 1.4.8)
   - WCDBOptimizedSQLCipher (1.4.8)
@@ -66,7 +70,7 @@ DEPENDENCIES:
   - MWPhotoBrowser
   - SCRecorder
   - SVProgressHUD
-  - TZImagePickerController
+  - TZImagePickerController (~> 3.8.6)
   - WCDB.objc
   - YTKNetwork
   - YYKit (from `https://github.com/SAGESSE-CN/YYKit.git`)
@@ -120,12 +124,12 @@ SPEC CHECKSUMS:
   SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
-  TZImagePickerController: 276dc7c0cc70da9ee354046474b405d87ef81c89
+  TZImagePickerController: 3751b9b850d00802e9f4f7bd8e1365ee5c4f0990
   WCDB.objc: 35650ab6d455a4a865d94d95436b1ddc865479af
   WCDBOptimizedSQLCipher: 871994f7f620302fdf87a2729c099a1efa2223da
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYKit: d2a14de6a6d535a96d8368a02da4ecba8ddc2c69
 
-PODFILE CHECKSUM: 2e272a77cfe859e56405ea2fd3c0b172b137467f
+PODFILE CHECKSUM: cdb09fcff95befa75d968b00447e8c8822ada783
 
 COCOAPODS: 1.16.2
