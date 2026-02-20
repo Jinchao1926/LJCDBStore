@@ -20,9 +20,9 @@ static NSString *const kTableChatFTS = @"ChatFTS";
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     
     /// FTS表
-    [database setTokenizer:WCTTokenizerNameWCDB];
-    BOOL create = [database createVirtualTableOfName:kTableChatFTS withClass:LJCChatFTSModel.class];
-    NSLog(@"createFTS");
+    [database addTokenizer:WCTTokenizerLegacyOneOrBinary];
+    BOOL create = [database createVirtualTable:kTableChatFTS withClass:LJCChatFTSModel.class];
+    NSLog(@"createFTS: %d", create);
 }
 
 + (NSArray<LJCChatFTSModel *> *)chatMessagesMatch:(NSString *)condition
@@ -35,7 +35,10 @@ static NSString *const kTableChatFTS = @"ChatFTS";
     if ([database canOpen]) {
         NSString *match = [condition stringByAppendingString:@"*"];
         // 获取部分字段即可
-        return [database getObjectsOnResults:{ LJCChatFTSModel.content } fromTable:kTableChatFTS where:LJCChatFTSModel.content.match(match) orderBy:LJCChatFTSModel.chatId.order(WCTOrderedAscending)];
+        return [database getObjectsOnResultColumns:{ LJCChatFTSModel.content }
+                                         fromTable:kTableChatFTS
+                                             where:LJCChatFTSModel.content.match(match)
+                                            orders:LJCChatFTSModel.chatId.asOrder(WCTOrderedAscending)];
         //        return [database getObjectsOfClass:LJCChatModel.class fromTable:kTableChat where:LJCChatModel.content.match(match) orderBy:LJCChatModel.chatId.order(WCTOrderedAscending)];
     }
     return @[];
@@ -45,7 +48,7 @@ static NSString *const kTableChatFTS = @"ChatFTS";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database deleteAllObjectsFromTable:kTableChatFTS];
+        return [database deleteFromTable:kTableChatFTS];
     }
     return NO;
 }
@@ -55,7 +58,7 @@ static NSString *const kTableChatFTS = @"ChatFTS";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database insertObject:message into:kTableChatFTS];
+        return [database insertObject:message intoTable:kTableChatFTS];
     }
     return NO;
 }

@@ -18,7 +18,7 @@ static NSString *const kTableDoctor = @"Doctor";
 + (void)initialize
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
-    [database createTableAndIndexesOfName:kTableDoctor withClass:LJCDoctorModel.class];
+    [database createTable:kTableDoctor withClass:LJCDoctorModel.class];
 }
 
 + (NSArray<LJCDoctorModel *> *)doctorsWithRange:(NSRange)range
@@ -34,7 +34,7 @@ static NSString *const kTableDoctor = @"Doctor";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        [database insertObjects:doctors into:kTableDoctor];
+        [database insertObjects:doctors intoTable:kTableDoctor];
     }
     return NO;
 }

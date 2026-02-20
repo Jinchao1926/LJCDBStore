@@ -671,13 +671,6 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
-		597F5AEB1F9DCC270043D7F6 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
 		597F5AEC1F9DCC330043D7F6 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -990,7 +983,6 @@
 		59E4FCE81F98A4FE00FDD23B /* LJCDBStore */ = {
 			isa = PBXGroup;
 			children = (
-				597F5AEB1F9DCC270043D7F6 /* Vendor */,
 				597F5AEA1F9DCC160043D7F6 /* Component */,
 				599D1CD41F9DCD6200D91F42 /* Catogroy */,
 				599D1CE31F9DDCBF00D91F42 /* Utility */,
@@ -1219,9 +1211,11 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDB/WCDB.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDB.objc/WCDBObjc.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework",
 				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1239,9 +1233,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDBObjc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

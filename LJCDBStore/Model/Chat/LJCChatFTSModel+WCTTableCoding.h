@@ -7,7 +7,7 @@
 //
 
 #import "LJCChatFTSModel.h"
-#import <WCDB/WCDB.h>
+#import <WCDBObjc/WCDBObjc.h>
 
 @interface LJCChatFTSModel (WCTTableCoding) <WCTTableCoding>
 

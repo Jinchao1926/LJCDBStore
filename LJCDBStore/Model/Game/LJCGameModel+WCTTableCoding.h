@@ -7,7 +7,7 @@
 //
 
 #import "LJCGameModel.h"
-#import <WCDB/WCDB.h>
+#import <WCDBObjc/WCDBObjc.h>
 
 /*
  利用分类，而不是直接定义在头文件，

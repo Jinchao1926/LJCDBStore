@@ -33,8 +33,8 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     
     self.datas = @[ @"游戏列表(WCDB)",
                     @"游戏增删改(WCDB)",
-                    @"医生列表(YTKNetWork)",
-                    @"医生列表(YTKNetWork + YYKit)",
+//                    @"医生列表(YTKNetWork)",
+//                    @"医生列表(YTKNetWork + YYKit)",
                     @"Keyboard(IQKeyboardManager)",
                     @"Chat",
                     @"ChatFTS"];
@@ -84,10 +84,6 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        for (int idx = 0; idx < 10; idx++) {
-            [self.tableView reloadData];
-        }
-        return;
         LJCGameViewController *gameVC = [[LJCGameViewController alloc] init];
         [self.navigationController pushViewController:gameVC animated:YES];
     }
@@ -95,19 +91,19 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
         LJCGameModifyViewController *gameModifyVC = [[LJCGameModifyViewController alloc] init];
         [self.navigationController pushViewController:gameModifyVC animated:YES];
     }
+//    else if (indexPath.row == 2) {
+//        LJCDoctorViewController *doctorVC = [[LJCDoctorViewController alloc] init];
+//        [self.navigationController pushViewController:doctorVC animated:YES];
+//    }
+//    else if (indexPath.row == 3) {
+//        LJCDoctorYYViewController *doctorVC = [[LJCDoctorYYViewController alloc] init];
+//        [self.navigationController pushViewController:doctorVC animated:YES];
+//    }
     else if (indexPath.row == 2) {
-        LJCDoctorViewController *doctorVC = [[LJCDoctorViewController alloc] init];
-        [self.navigationController pushViewController:doctorVC animated:YES];
-    }
-    else if (indexPath.row == 3) {
-        LJCDoctorYYViewController *doctorVC = [[LJCDoctorYYViewController alloc] init];
-        [self.navigationController pushViewController:doctorVC animated:YES];
-    }
-    else if (indexPath.row == 4) {
         LJCKeyboardViewController *keyboardVC = [[LJCKeyboardViewController alloc] init];
         [self.navigationController pushViewController:keyboardVC animated:YES];
     }
-    else if (indexPath.row == 5) {
+    else if (indexPath.row == 3) {
         LJCChatViewController *chatVC = [[LJCChatViewController alloc] init];
         [self.navigationController pushViewController:chatVC animated:YES];
     }

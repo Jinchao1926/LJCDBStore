@@ -17,15 +17,15 @@ static NSString *const kTableChat = @"Chat";
 + (void)initialize
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
-    BOOL create = [database createTableAndIndexesOfName:kTableChat withClass:LJCChatModel.class];
-    NSLog(@"create");
+    BOOL create = [database createTable:kTableChat withClass:LJCChatModel.class];
+    NSLog(@"create: %d", create);
 }
 
 + (BOOL)clearChatMessages
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database deleteAllObjectsFromTable:kTableChat];
+        return [database deleteFromTable:kTableChat];
     }
     return NO;
 }
@@ -35,7 +35,7 @@ static NSString *const kTableChat = @"Chat";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database getObjectsOfClass:LJCChatModel.class fromTable:kTableChat orderBy:LJCChatModel.chatId.order(WCTOrderedDescending) limit:range.length offset:range.location];
+        return [database getObjectsOfClass:LJCChatModel.class fromTable:kTableChat orders:LJCChatModel.chatId.asOrder(WCTOrderedDescending) limit:range.length offset:range.location];
 //        return [database getObjectsOfClass:LJCChatModel.class fromTable:kTableChat limit:range.length offset:range.location];
     }
     return @[];
@@ -46,7 +46,7 @@ static NSString *const kTableChat = @"Chat";
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
         // LJCChatSourceTypePhoto or LJCChatSourceTypeVideo
-        return [database getObjectsOfClass:LJCChatModel.class fromTable:kTableChat where:LJCChatModel.chatType.in(@[ @1, @3 ]) orderBy:LJCChatModel.chatId.order(WCTOrderedAscending)];
+        return [database getObjectsOfClass:LJCChatModel.class fromTable:kTableChat where:LJCChatModel.chatType.in(@[ @1, @3 ]) orders:LJCChatModel.chatId.asOrder(WCTOrderedAscending)];
     }
     return @[];
 }
@@ -56,7 +56,7 @@ static NSString *const kTableChat = @"Chat";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        if ([database insertObject:message into:kTableChat]) {
+        if ([database insertObject:message intoTable:kTableChat]) {
             message.chatId = message.lastInsertedRowID; //主键
             return YES;
         }
@@ -69,10 +69,10 @@ static NSString *const kTableChat = @"Chat";
 //    NSLog(@"message.chatId:%zd", message.chatId);
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database updateRowsInTable:kTableChat
-                              onProperties:LJCChatModel.AllProperties
-                                withObject:message
-                                     where:LJCChatModel.chatId == message.chatId];
+        return [database updateTable:kTableChat
+                       setProperties:LJCChatModel.allProperties
+                            toObject:message
+                               where:LJCChatModel.chatId == message.chatId];
     }
     return NO;
 }
@@ -81,7 +81,7 @@ static NSString *const kTableChat = @"Chat";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        [database deleteObjectsFromTable:kTableChat where:LJCChatModel.chatId == chatId];
+        [database deleteFromTable:kTableChat where:LJCChatModel.chatId == chatId];
     }
     return NO;
 }
