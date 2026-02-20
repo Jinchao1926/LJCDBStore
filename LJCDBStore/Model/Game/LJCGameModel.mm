@@ -18,13 +18,13 @@
 @implementation LJCGameModel
 
 WCDB_IMPLEMENTATION(LJCGameModel)
-WCDB_SYNTHESIZE(LJCGameModel, gameId)
-WCDB_SYNTHESIZE(LJCGameModel, gameName)
-WCDB_SYNTHESIZE(LJCGameModel, gameDescription)
-WCDB_SYNTHESIZE(LJCGameModel, gameFollow)
+WCDB_SYNTHESIZE(gameId)
+WCDB_SYNTHESIZE(gameName)
+WCDB_SYNTHESIZE(gameDescription)
+WCDB_SYNTHESIZE(gameFollow)
 
 //WCDB_PRIMARY(LJCGameModel, gameId)                  //主键
-WCDB_PRIMARY_AUTO_INCREMENT(LJCGameModel, gameId)   //主键自增，AUTOINCREMENT is only allowed on an INTEGER PRIMARY KEY
+WCDB_PRIMARY_AUTO_INCREMENT(gameId)   //主键自增，AUTOINCREMENT is only allowed on an INTEGER PRIMARY KEY
 
 - (BOOL)ljc_isAutoIncrement
 {

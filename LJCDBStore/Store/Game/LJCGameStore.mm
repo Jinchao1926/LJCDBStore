@@ -25,7 +25,7 @@ static NSString *const kTableGame = @"Game";
     
     // WCDB内部会自动判断表是否存在，同时还会判断 ORM 映射是否新增了字段
 //    if (![database isTableExists:kTableGame]) {
-        [database createTableAndIndexesOfName:kTableGame withClass:LJCGameModel.class];
+        [database createTable:kTableGame withClass:LJCGameModel.class];
 //    }
 }
 
@@ -33,7 +33,7 @@ static NSString *const kTableGame = @"Game";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database dropTableOfName:kTableGame];
+        return [database dropTable:kTableGame];
     }
     return NO;
 }
@@ -43,7 +43,7 @@ static NSString *const kTableGame = @"Game";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database getObjectsOfClass:LJCGameModel.class fromTable:kTableGame orderBy:LJCGameModel.gameId.order(WCTOrderedAscending)];
+        return [database getObjectsOfClass:LJCGameModel.class fromTable:kTableGame orders:LJCGameModel.gameId.asOrder(WCTOrderedAscending)];
 //        return [database getAllObjectsOfClass:LJCGameModel.class fromTable:kTableGame];
     }
     return @[];
@@ -54,7 +54,7 @@ static NSString *const kTableGame = @"Game";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database insertObject:(WCTObject *)game into:kTableGame];
+        return [database insertObject:(WCTObject *)game intoTable:kTableGame];
     }
     return NO;
 }
@@ -63,7 +63,7 @@ static NSString *const kTableGame = @"Game";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database insertObjects:games into:kTableGame];
+        return [database insertObjects:games intoTable:kTableGame];
     }
     return NO;
 }
@@ -73,7 +73,7 @@ static NSString *const kTableGame = @"Game";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database deleteObjectsFromTable:kTableGame where:LJCGameModel.gameId == gameId];
+        return [database deleteFromTable:kTableGame where:LJCGameModel.gameId == gameId];
     }
     return NO;
 }
@@ -82,7 +82,7 @@ static NSString *const kTableGame = @"Game";
 {
     WCTDatabase *database = [LJCStoreManager sharedManager].database;
     if ([database canOpen]) {
-        return [database deleteAllObjectsFromTable:kTableGame];
+        return [database deleteFromTable:kTableGame];
     }
     return NO;
 }
@@ -98,10 +98,10 @@ static NSString *const kTableGame = @"Game";
 //        WCTPropertyList list;
 //        list.push_back(LJCGameModel.gameName);
 //        list.push_back(LJCGameModel.gameDescription);
-        return [database updateRowsInTable:kTableGame
-                              onProperties:{ LJCGameModel.gameName, LJCGameModel.gameDescription }
-                                withObject:game
-                                     where:LJCGameModel.gameName == @"游戏王"];
+        return [database updateTable:kTableGame
+                       setProperties:{ LJCGameModel.gameName, LJCGameModel.gameDescription }
+                            toObject:game
+                               where:LJCGameModel.gameName == @"游戏王"];
     }
     return NO;
 }

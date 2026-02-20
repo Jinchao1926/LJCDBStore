@@ -74,7 +74,7 @@ NSString *const LJCChatRequestManagerToUserName = @"LJCChatRequestManagerToUserN
     LJCChatModel *chat = [self p_commonChatModel];
     chat.chatType = LJCChatSourceTypeText;
     chat.content = text;
-    BOOL insert = [LJCChatStore insertChatMessage:chat];
+    [LJCChatStore insertChatMessage:chat];
     
     // 1s delay, simulate HTTP Request
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

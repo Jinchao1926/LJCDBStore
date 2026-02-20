@@ -12,16 +12,16 @@
 @implementation LJCDoctorModel
 
 WCDB_IMPLEMENTATION(LJCDoctorModel)
-WCDB_SYNTHESIZE(LJCDoctorModel, staffNo)
-WCDB_SYNTHESIZE(LJCDoctorModel, avatarURL)
-WCDB_SYNTHESIZE(LJCDoctorModel, name)
-WCDB_SYNTHESIZE(LJCDoctorModel, sex)
-WCDB_SYNTHESIZE(LJCDoctorModel, introduce)
-WCDB_SYNTHESIZE(LJCDoctorModel, speciality)
-WCDB_SYNTHESIZE(LJCDoctorModel, hospitalCode)
-WCDB_SYNTHESIZE(LJCDoctorModel, hospitalName)
-WCDB_SYNTHESIZE(LJCDoctorModel, deptCode)
-WCDB_SYNTHESIZE(LJCDoctorModel, deptName)
+WCDB_SYNTHESIZE(staffNo)
+WCDB_SYNTHESIZE(avatarURL)
+WCDB_SYNTHESIZE(name)
+WCDB_SYNTHESIZE(sex)
+WCDB_SYNTHESIZE(introduce)
+WCDB_SYNTHESIZE(speciality)
+WCDB_SYNTHESIZE(hospitalCode)
+WCDB_SYNTHESIZE(hospitalName)
+WCDB_SYNTHESIZE(deptCode)
+WCDB_SYNTHESIZE(deptName)
 
-WCDB_PRIMARY(LJCDoctorModel, staffNo);
+WCDB_PRIMARY(staffNo);
 @end

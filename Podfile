@@ -1,14 +1,12 @@
-platform :ios, '9.0'
+platform :ios, '12.0'
 
 target "LJCDBStore" do
     inhibit_all_warnings! #inhibit_warnings!   #禁止三方警告
-    use_frameworks!     #swift库需要，wcdb 创建虚表需要
+    use_frameworks!
     
     # Networking -> Model -> DB
-    pod 'WCDB'
+    pod 'WCDB.objc'
     #pod 'WCDB', '~> 1.0.5'
-    #pod 'WCDB', git: 'https://github.com/Tencent/wcdb.git', branch: 'master'
-    #pod 'WCDB', :git => 'https://github.com/Tencent/wcdb.git', :branch => 'master'
     #pod 'YTKKeyValueStore'  #, '~> 0.1.2'
     pod 'AFNetworking'
     pod 'YTKNetwork'
@@ -19,7 +17,9 @@ target "LJCDBStore" do
     pod 'Masonry', :git => 'https://github.com/SnapKit/Masonry.git'
     pod 'MJRefresh' #, '~> 3.1.15'
     pod 'SVProgressHUD' #, '~> 2.2.2'
-    pod 'YYKit'
+    #pod 'YYKit'
+    # Fix webP framewrk: https://github.com/ibireme/YYKit/pull/596
+    pod 'YYKit', git: 'https://github.com/SAGESSE-CN/YYKit.git'
     
     #pod 'GYMonitor'
     #pod 'UITableView+FDTemplateLayoutCell'
@@ -36,4 +36,15 @@ target "LJCDBStore" do
     #pod 'MLeaksFinder'
     pod 'Aspects'   #hook
     
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # 强制设置最低部署目标为 iOS 12.0
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      # 兼容 Xcode 14+ 的额外配置（可选，防止其他兼容问题）
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+    end
+  end
 end

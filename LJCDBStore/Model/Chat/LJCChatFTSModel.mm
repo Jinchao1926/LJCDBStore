@@ -9,13 +9,13 @@
 #import "LJCChatFTSModel+WCTTableCoding.h"
 #import "LJCChatFTSModel.h"
 #import "LJCChatModel.h"
-#import <WCDB/WCDB.h>
+#import <WCDBObjc/WCDBObjc.h>
 
 @implementation LJCChatFTSModel
 
 WCDB_IMPLEMENTATION(LJCChatFTSModel)
-WCDB_SYNTHESIZE(LJCChatFTSModel, chatId)
-WCDB_SYNTHESIZE(LJCChatFTSModel, content)
+WCDB_SYNTHESIZE(chatId)
+WCDB_SYNTHESIZE(content)
 
 
 /// FTS
@@ -28,8 +28,8 @@ WCDB_SYNTHESIZE(LJCChatFTSModel, content)
  不支持、也不需要创建索引
  不支持通过ALTER TABLE为虚拟表添加新的字段
  */
-WCDB_VIRTUAL_TABLE_MODULE(LJCChatFTSModel, WCTModuleNameFTS3)
-WCDB_VIRTUAL_TABLE_TOKENIZE(LJCChatFTSModel, WCTTokenizerNameWCDB)
+WCDB_VIRTUAL_TABLE_MODULE(WCTModuleFTS3)
+WCDB_VIRTUAL_TABLE_TOKENIZE(WCTTokenizerLegacyOneOrBinary)
 
 
 + (LJCChatFTSModel *)ftsModelWithOrigin:(LJCChatModel *)origin

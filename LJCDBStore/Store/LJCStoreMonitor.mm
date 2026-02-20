@@ -7,7 +7,7 @@
 //
 
 #import "LJCStoreMonitor.h"
-#import <WCDB/WCDB.h>
+#import <WCDBObjc/WCDBObjc.h>
 
 @implementation LJCStoreMonitor
 
@@ -41,38 +41,36 @@
 
 - (void)stopMonitor
 {
-    [WCTStatistics SetGlobalPerformanceTrace:nil];
-    [WCTStatistics SetGlobalErrorReport:nil];
-    [WCTStatistics SetGlobalSQLTrace:nil];
+    [WCTDatabase globalTracePerformance:nil];
+    [WCTDatabase globalTraceError:nil];
+    [WCTDatabase globalTraceSQL:nil];
 }
 
 #pragma mark - Monitor
 - (void)monitorGlobalPerformance
 {
-    //trace
-    //You should register trace before all db operation.
-    [WCTStatistics SetGlobalPerformanceTrace:^(WCTTag tag, NSDictionary<NSString *, NSNumber *> *sqls, NSInteger cost) {
-//        NSLog(@"[DBPerformanceMonitor]-Tag: %d", tag);
-        [sqls enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull sql, NSNumber * _Nonnull count, BOOL * _Nonnull stop) {
-            NSLog(@"[DBPerformanceMonitor]-SQL: %@ Count: %d", sql, count.intValue);
-        }];
-        NSLog(@"[DBPerformanceMonitor]-Total cost %ld microseconds", (long) cost / 1000);
+    // trace
+    // You should register trace before all db operation.
+    [WCTDatabase globalTracePerformance:^(WCTTag tag, NSString *path, uint64_t handleId, NSString *sql, WCTPerformanceInfo *info) {
+        NSLog(@"[DBPerformanceMonitor] [%llu] at path %@ takes %lld nanoseconds to execute sql %@",
+                  handleId, path, info.costInNanoseconds, sql);
     }];
 }
 
 - (void)monitorGlobalSQL
 {
-    //SQL
-    [WCTStatistics SetGlobalSQLTrace:^(NSString *sql) {
-        NSLog(@"[DBSQLMonitor] SQL: %@", sql);
+    // SQL
+    [WCTDatabase globalTraceSQL:^(WCTTag tag, NSString *path, uint64_t handleId, NSString *sql, NSString *info) {
+        NSLog(@"[DBSQLMonitor] [%llu] at path %@ executed SQL %@", handleId, path, sql);
     }];
 }
 
 - (void)monitorGlobalError
 {
-    //error
-    [WCTStatistics SetGlobalErrorReport:^(WCTError *error) {
-        NSLog(@"[DBErrorMonitor] %@", error);
+    // error
+    [WCTDatabase globalTraceError:^(WCTError *error) {
+        assert(error.level != WCTErrorLevelFatal);
+        NSLog(@"[DBErrorMonitor] %@", error);;
     }];
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "LJCDoctorModel.h"
-#import <WCDB/WCDB.h>
+#import <WCDBObjc/WCDBObjc.h>
 
 @interface LJCDoctorModel (WCTTableCoding) <WCTTableCoding>
 
